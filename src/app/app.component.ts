@@ -15,7 +15,7 @@ export class AppComponent  {
 //VARIABILI
 
 const chiaveTeatro = document.getElementById('key') as unknown as string;
-const nomeUtente = document.getElementById('nome') as unknown as string;
+const nomeUtente = document.getElementById('nome') as HTMLInputElement;
 const Keyteatro = "6701ca6a";
 const div1 = document.getElementById('chiaveTeatro') as HTMLElement;
 const div2 = document.getElementById('login') as HTMLElement;
@@ -34,7 +34,7 @@ const Teatro = {
 
 //CLASSE 
 
-class ordinePrenotazione { 
+class ordinePrenotazione {
   prenotazione = [];
   value: any;
   style: CSSStyleDeclaration;
@@ -55,7 +55,7 @@ class ordinePrenotazione {
     });
   }
   selezionaPosto () { 
-    if (nomeUtente !== "" ) {
+    if (nomeUtente.value !== "" ) {
       this.value = nomeUtente.value;
       this.style.color = "red";
       nomeUtente.value="";
