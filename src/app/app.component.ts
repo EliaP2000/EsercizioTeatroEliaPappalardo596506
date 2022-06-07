@@ -22,7 +22,7 @@ const div2 = document.getElementById('login') as HTMLElement;
 const div3 = document.getElementById('teatro') as HTMLElement;
 const resetTeatro = document.getElementById('reset');
 
-const nfilePlatea =7;
+const nfilePlatea = 7;
 const npostiPlatea = 10;
 const nfilePalchi = 4;
 const npostiPalchi = 6;
