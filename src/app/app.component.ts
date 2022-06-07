@@ -92,4 +92,3 @@ function SecondoDiv(){
 
 var plateaPrenotazione = new ordinePrenotazione(Teatro.platea, 'platea');
 var palchiPrenotazione = new ordinePrenotazione(Teatro.palchi, 'palchi');
-
