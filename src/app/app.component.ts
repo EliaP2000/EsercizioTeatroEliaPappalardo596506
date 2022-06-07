@@ -15,7 +15,7 @@ export class AppComponent  {
 //VARIABILI
 
 const chiaveTeatro = document.getElementById('key') as unknown as string;
-const nomeUtente = document.getElementById('nome');
+const nomeUtente = document.getElementById('nome') as unknown as string;
 const Keyteatro = "6701ca6a";
 const div1 = document.getElementById('chiaveTeatro') as HTMLElement;
 const div2 = document.getElementById('login') as HTMLElement;
@@ -55,7 +55,7 @@ class ordinePrenotazione {
     });
   }
   selezionaPosto () { 
-    if (nomeUtente.value !== "" ) {
+    if (nomeUtente !== "" ) {
       this.value = nomeUtente.value;
       this.style.color = "red";
       nomeUtente.value="";
