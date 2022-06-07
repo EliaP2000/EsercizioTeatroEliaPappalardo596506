@@ -1,4 +1,3 @@
-<hello name="{{ name }}"></hello>
 <h1> Prenotazione teatro</h1>
 
 <div id="chiaveTeatro">
@@ -11,6 +10,23 @@ Imposta la chiave <input id="key"/>
 </div>
 
 <div id="teatro">
-  <p id="platea"> </p>
-  <p id="palchi"> </p>
+<div class='panel panel-primary'>  
+<div class='panel-heading'>  
+    {{title}}  
+</div>   
+<div class='panel-body'>  
+    <div class='table-responsive'>  
+        <table class='table'>
+            <tbody>  
+                <tr *ngFor="let movie of movies;">  
+                    <td>{{movie.title}}</td>  
+                    <td>{{movie.director}}</td>  
+                    <td>{{movie.cast}}</td>  
+                    <td>{{movie.releaseDate}}</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>  
+</div>  
+</div>  
 </div>
