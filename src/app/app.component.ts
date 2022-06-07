@@ -33,7 +33,7 @@ export class AppComponent
 }   
 class Teatro1 {  
     platea : any[][]; 
-static platea: any;
+    static platea: any;
     constructor(posti, elementName){
       var element = document.getElementById(elementName);
       this.platea = posti.map((fila, i) => { 
