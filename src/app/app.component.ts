@@ -36,17 +36,17 @@ class Teatro1 {
     static platea: any;
     constructor(posti, elementName){
       var element = document.getElementById(elementName);
-      this.platea = posti.map((fila, i) => { 
+      for(var i=0; i<10; i++){
           var btn = document.createElement('button'); 
           element.appendChild(btn);
           console.log(elementName)
-          btn.value = fila;
-          btn.style.color = (fila !== "x") ? 'red' : 'green'; 
+          btn.value = nomeUtente.value;
+          btn.style.color = (nomeUtente.value !== "x") ? 'red' : 'green'; 
           btn.innerHTML = 'P' + (i + 1); 
-      });
+      }
       element.appendChild(document.createElement('br'));
      }
-}  
+} 
 class Teatro2 {  
   palchi: any[][];
 }  
