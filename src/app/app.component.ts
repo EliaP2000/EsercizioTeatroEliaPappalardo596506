@@ -17,11 +17,6 @@ const npostiPlatea = 10;
 const nfilePalchi = 4;
 const npostiPalchi = 6;
 
-const Teatro = {
-  platea: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("x")),
-  palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x")),
-};
-
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -39,10 +34,12 @@ export class AppComponent
 class Teatro1 {  
     platea : any[][]; 
 }  
-
 class Teatro2 {  
   palchi: any[][];
 }  
+
+
+
 //CLASSE 
 /*
 class ordinePrenotazione {
