@@ -12,14 +12,14 @@ export class AppComponent
 {   
     title: string ="Teatro";  
     teatro: Movie[] = [  
-        {title:'p1',director:'p2',cast:'p3', releaseDate:'p4'},  
+        {title:'p1', director:'p2',cast:'p3', releaseDate:'p4'},  
         {title:'p5',director:'p6',cast:'p7',releaseDate:'p8'},  
         {title:'p9',director:'p10',cast:'p11',releaseDate:'p12'},  
         {title:'p13',director:'p14',cast:'p15',releaseDate:'p16'},  
     ]  
 }   
 class Movie {  
-    title : string;  
+    title : HTMLButtonElement;  
     director : string;  
     cast : string;  
     releaseDate : string;  
