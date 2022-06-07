@@ -19,10 +19,17 @@ const div1 = document.getElementById('chiaveTeatro') as HTMLElement;
 const div2 = document.getElementById('login') as HTMLElement;
 const div3 = document.getElementById('teatro') as HTMLElement;
 const resetTeatro = document.getElementById('reset');
+
+const nfilePlatea =7;
+const npostiPlatea = 10;
+const nfilePalchi = 4;
+const npostiPalchi = 6;
+
 const Teatro = {
-  platea: Array(nfilaPlatea).fill("").map(() => Array(npostiPlatea).fill("x")),
-  palchi: Array(nfilaPalchi).fill("").map(() => Array(npostiPalchi).fill("x")),
+  platea: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("x")),
+  palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x")),
 };
+
 
 function PrimoDiv(){
   if(chiaveTeatro == Keyteatro){
