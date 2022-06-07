@@ -17,8 +17,11 @@ Imposta la chiave <input id="key"/>
     <div class='table-responsive'>  
         <table class='table'>
             <tbody>  
-                <tr *ngFor="let posti of teatro;">  
-                    <button>{{posti.platea}}</button> 
+                <tr *ngFor="let posti of teatro1;">  
+                    <button>{{posti.platea}}</button>
+                </tr>
+                <tr *ngFor="let posti of teatro2;"> 
+                  <button>{{posti.palchi}}</button>
                 </tr>
             </tbody>  
         </table>  

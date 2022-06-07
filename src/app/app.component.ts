@@ -29,13 +29,19 @@ const Teatro = {
 })
 export class AppComponent   
 {   
-    teatro: Movie[] = [
+    teatro1: Teatro1[] = [
       {platea: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("x"))},
-      {platea: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x"))}
-    ]  
+    ]
+    teatro2: Teatro2[] = [
+      {palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x"))}
+    ] 
 }   
-class Movie {  
+class Teatro1 {  
     platea : any[][]; 
+}  
+
+class Teatro2 {  
+  palchi: any[][];
 }  
 //CLASSE 
 /*
