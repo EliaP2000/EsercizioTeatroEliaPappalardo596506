@@ -39,9 +39,7 @@ class ordinePrenotazione {
   value: any;
   style: CSSStyleDeclaration;
   constructor(posti, elementName) { 
-    var element = document.getElementById(elementName) as HTMLElement;
-    if(element == null)
-      console.log(element);
+    var element = document.getElementById(elementName);
     this.prenotazione = posti.map((fila, i) => { 
       var p = fila.map((nome, j) => {
         var btn = document.createElement('button'); 
