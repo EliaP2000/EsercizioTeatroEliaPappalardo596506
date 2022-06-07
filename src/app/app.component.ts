@@ -11,11 +11,11 @@ import { ajax, AjaxResponse, AjaxRequest, AjaxError } from 'rxjs/ajax';
 export class AppComponent   
 {   
     title: string ="Teatro";  
-    movies: Movie[] =[  
-        {title:'Zootopia',director:'Byron Howard, Rich Moore',cast:'Idris Elba, Ginnifer Goodwin, Jason Bateman',releaseDate:'March 4, 2016'},  
-        {title:'Batman v Superman: Dawn of Justice',director:'Zack Snyder',cast:'Ben Affleck, Henry Cavill, Amy Adams',releaseDate:'March 25, 2016'},  
-        {title:'Captain America: Civil War',director:'Anthony Russo, Joe Russo',cast:'Scarlett Johansson, Elizabeth Olsen, Chris Evans',releaseDate:'May 6, 2016'},  
-        {title:'X-Men: Apocalypse',director:'Bryan Singer',cast:'Jennifer Lawrence, Olivia Munn, Oscar Isaac',releaseDate:'May 27, 2016'},  
+    teatro: Movie[] = [  
+        {title:'p1',director:'p2',cast:'p3', releaseDate:'p4'},  
+        {title:'p5',director:'p6',cast:'p7',releaseDate:'p8'},  
+        {title:'p9',director:'p10',cast:'p11',releaseDate:'p12'},  
+        {title:'p13',director:'p14',cast:'p15',releaseDate:'p16'},  
     ]  
 }   
 class Movie {  
