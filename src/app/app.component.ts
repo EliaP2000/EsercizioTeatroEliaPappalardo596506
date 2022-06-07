@@ -2,31 +2,8 @@ import { isNull } from '@angular/compiler/src/output/output_ast';
 import { Component, VERSION } from '@angular/core';
 import { ajax, AjaxResponse, AjaxRequest, AjaxError } from 'rxjs/ajax';
 
-
-@Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
-})
-export class AppComponent   
-{   
-    title: string ="Teatro";  
-    teatro: Movie[] = [  
-        {title:'p1', director:'p2',cast:'p3', releaseDate:'p4'},  
-        {title:'p5',director:'p6',cast:'p7',releaseDate:'p8'},  
-        {title:'p9',director:'p10',cast:'p11',releaseDate:'p12'},  
-        {title:'p13',director:'p14',cast:'p15',releaseDate:'p16'},  
-    ]  
-}   
-class Movie {  
-    title : HTMLButtonElement;  
-    director : string;  
-    cast : string;  
-    releaseDate : string;  
-}  
-
 //VARIABILI
-/*
+
 const chiaveTeatro = document.getElementById('key') as unknown as string;
 const nomeUtente = document.getElementById('nome') as HTMLInputElement;
 const Keyteatro = "6701ca6a";
@@ -45,8 +22,23 @@ const Teatro = {
   palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x")),
 };
 
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
+})
+export class AppComponent   
+{   
+    teatro: Movie[] = [
+      {director: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("x"))},
+      {director: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x"))}
+    ]  
+}   
+class Movie {  
+    director : any[][];  
+}  
 //CLASSE 
-
+/*
 class ordinePrenotazione {
   prenotazione = [];
   value: any;
@@ -84,7 +76,7 @@ class ordinePrenotazione {
     );
   }
 }
-
+*/
 //FUNZIONI
 
 function PrimoDiv(){
@@ -106,6 +98,6 @@ function SecondoDiv(){
     alert("inserire nome");
   }
 }
-
+/*
 var plateaPrenotazione = new ordinePrenotazione(Teatro.platea, 'platea');
 var palchiPrenotazione = new ordinePrenotazione(Teatro.palchi, 'palchi');*/

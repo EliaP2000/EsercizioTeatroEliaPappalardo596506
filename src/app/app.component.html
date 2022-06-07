@@ -12,17 +12,13 @@ Imposta la chiave <input id="key"/>
 <div id="teatro">
 <div class='panel panel-primary'>  
 <br/><div class='panel-heading'>
-    {{title}}  
 </div>   
 <div class='panel-body'>  
     <div class='table-responsive'>  
         <table class='table'>
             <tbody>  
                 <tr *ngFor="let posti of teatro;">  
-                    <button>{{posti.title}}</button>  
                     <button>{{posti.director}}</button> 
-                    <button>{{posti.cast}}</button>  
-                    <button>{{posti.releaseDate}}</button>
                 </tr>
             </tbody>  
         </table>  
