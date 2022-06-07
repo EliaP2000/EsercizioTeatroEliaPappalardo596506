@@ -33,6 +33,7 @@ export class AppComponent
 }   
 class Teatro1 {  
     platea : any[][]; 
+static platea: any;
     constructor(posti, elementName){
       var element = document.getElementById(elementName);
       this.platea = posti.map((fila, i) => { 
@@ -42,10 +43,8 @@ class Teatro1 {
           btn.value = fila;
           btn.style.color = (fila !== "x") ? 'red' : 'green'; 
           btn.innerHTML = 'P' + (i + 1); 
-
       });
       element.appendChild(document.createElement('br'));
-      return p;
      }
 }  
 class Teatro2 {  
@@ -127,6 +126,6 @@ function SecondoDiv(){
     alert("inserire nome");
   }
 }
-/*
-var plateaPrenotazione = new ordinePrenotazione(Teatro.platea, 'platea');
-var palchiPrenotazione = new ordinePrenotazione(Teatro.palchi, 'palchi');*/
+
+var plateaPrenotazione = new Teatro1(Teatro1.platea, 'platea');
+//var palchiPrenotazione = new Teatro2(Teatro2.palchi, 'palchi');
