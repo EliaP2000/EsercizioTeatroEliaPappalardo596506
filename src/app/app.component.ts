@@ -30,12 +30,12 @@ const Teatro = {
 export class AppComponent   
 {   
     teatro: Movie[] = [
-      {director: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("x"))},
-      {director: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x"))}
+      {platea: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("x"))},
+      {platea: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x"))}
     ]  
 }   
 class Movie {  
-    director : any[][];  
+    platea : any[][]; 
 }  
 //CLASSE 
 /*
