@@ -36,6 +36,8 @@ const Teatro = {
 
 class ordinePrenotazione { 
   prenotazione = [];
+  style: CSSStyleDeclaration;
+  value: any;
   constructor(posti, elementName) { 
     var element = document.getElementById(elementName);
     this.prenotazione = posti.map((fila, i) => { 
@@ -53,13 +55,11 @@ class ordinePrenotazione {
     });
   }
   selezionaPosto () { 
-    if ( prenotaEl.value !== "" ) {
-      this.value = prenotaEl.value;
+    if (nomeUtente.value !== "" ) {
+      this.value = nomeUtente.value;
       this.style.color = "red";
-      prenotaEl.value="";
+      nomeUtente.value="";
     }
-    else
-      nomeEl.innerHTML = this.value 
   };
   toArray() { 
     return this.prenotazione.map((fila) =>
