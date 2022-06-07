@@ -18,6 +18,7 @@ const teatro = "6701ca6a";
 const div1 = document.getElementById('chiaveTeatro') as HTMLElement;
 const div2 = document.getElementById('login') as HTMLElement;
 const div3 = document.getElementById('teatro') as HTMLElement;
+const resetTeatro = document.getElementById('reset');
 
 function PrimoDiv(){
   if(chiaveTeatro == teatro){
