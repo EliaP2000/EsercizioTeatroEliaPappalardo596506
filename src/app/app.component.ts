@@ -39,11 +39,15 @@ class ordinePrenotazione {
   value: any;
   style: CSSStyleDeclaration;
   constructor(posti, elementName) { 
+    console.log(elementName)
     var element = document.getElementById(elementName);
+    console.log(elementName)
+    console.log(element)
     this.prenotazione = posti.map((fila, i) => { 
       var p = fila.map((nome, j) => {
         var btn = document.createElement('button'); 
         element.appendChild(btn);
+        console.log(elementName)
         btn.value = nome;
         btn.style.color = (nome !== "x") ? 'red' : 'green'; 
         btn.innerHTML = 'P' + (j + 1) + (i + 1); 
