@@ -14,14 +14,18 @@ export class AppComponent  {
 
 const chiaveTeatro = document.getElementById('key') as unknown as string;
 const nomeUtente = document.getElementById('nome');
-const teatro = "6701ca6a";
+const Keyteatro = "6701ca6a";
 const div1 = document.getElementById('chiaveTeatro') as HTMLElement;
 const div2 = document.getElementById('login') as HTMLElement;
 const div3 = document.getElementById('teatro') as HTMLElement;
 const resetTeatro = document.getElementById('reset');
+const Teatro = {
+  platea: Array(nfilaPlatea).fill("").map(() => Array(npostiPlatea).fill("x")),
+  palchi: Array(nfilaPalchi).fill("").map(() => Array(npostiPalchi).fill("x")),
+};
 
 function PrimoDiv(){
-  if(chiaveTeatro == teatro){
+  if(chiaveTeatro == Keyteatro){
     div1.style.display = 'none';
     div2.style.display = 'show';
   }
