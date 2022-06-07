@@ -36,8 +36,8 @@ const Teatro = {
 
 class ordinePrenotazione { 
   prenotazione = [];
-  style: CSSStyleDeclaration;
   value: any;
+  style: CSSStyleDeclaration;
   constructor(posti, elementName) { 
     var element = document.getElementById(elementName);
     this.prenotazione = posti.map((fila, i) => { 
@@ -92,3 +92,4 @@ function SecondoDiv(){
 
 var plateaPrenotazione = new ordinePrenotazione(Teatro.platea, 'platea');
 var palchiPrenotazione = new ordinePrenotazione(Teatro.palchi, 'palchi');
+
