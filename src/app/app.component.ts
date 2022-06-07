@@ -12,6 +12,8 @@ export class AppComponent  {
   name = 'Angular ' + VERSION.major;
 }
 
+//VARIABILI
+
 const chiaveTeatro = document.getElementById('key') as unknown as string;
 const nomeUtente = document.getElementById('nome');
 const Keyteatro = "6701ca6a";
@@ -30,6 +32,43 @@ const Teatro = {
   palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x")),
 };
 
+//CLASSE 
+
+class ordinePrenotazione { 
+  prenotazione = [];
+  constructor(posti, elementName) { 
+    var element = document.getElementById(elementName);
+    this.prenotazione = posti.map((fila, i) => { 
+      var p = fila.map((nome, j) => {
+        var btn = document.createElement('button'); 
+        element.appendChild(btn);
+        btn.value = nome;
+        btn.style.color = (nome !== "x") ? 'red' : 'green'; 
+        btn.innerHTML = 'P' + (j + 1) + (i + 1); 
+        btn.addEventListener('click', this.selezionaPosto); 
+        return btn;
+      });
+      element.appendChild(document.createElement('br'));
+      return p;
+    });
+  }
+  selezionaPosto () { 
+    if ( prenotaEl.value !== "" ) {
+      this.value = prenotaEl.value;
+      this.style.color = "red";
+      prenotaEl.value="";
+    }
+    else
+      nomeEl.innerHTML = this.value 
+  };
+  toArray() { 
+    return this.prenotazione.map((fila) =>
+      fila.map( x => x.value)
+    );
+  }
+}
+
+//FUNZIONI
 
 function PrimoDiv(){
   if(chiaveTeatro == Keyteatro){
@@ -50,3 +89,6 @@ function SecondoDiv(){
     alert("inserire nome");
   }
 }
+
+var plateaPrenotazione = new ordinePrenotazione(Teatro.platea, 'platea');
+var palchiPrenotazione = new ordinePrenotazione(Teatro.palchi, 'palchi');
