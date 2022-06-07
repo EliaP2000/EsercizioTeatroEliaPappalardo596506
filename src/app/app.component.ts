@@ -33,12 +33,38 @@ export class AppComponent
 }   
 class Teatro1 {  
     platea : any[][]; 
+    constructor(posti, elementName){
+      var element = document.getElementById(elementName);
+      this.platea = posti.map((fila, i) => { 
+          var btn = document.createElement('button'); 
+          element.appendChild(btn);
+          console.log(elementName)
+          btn.value = fila;
+          btn.style.color = (fila !== "x") ? 'red' : 'green'; 
+          btn.innerHTML = 'P' + (i + 1); 
+
+      });
+      element.appendChild(document.createElement('br'));
+      return p;
+     }
 }  
 class Teatro2 {  
   palchi: any[][];
 }  
 
+function selezionaPosto() { 
+  if (nomeUtente.value !== "" ) {
+    this.value = nomeUtente.value;
+    this.style.color = "red";
+    nomeUtente.value="";
+  }
+}
 
+function toArray() { 
+  return this.prenotazione.map((fila) =>
+    fila.map( x => x.value)
+  );
+}
 
 //CLASSE 
 /*
