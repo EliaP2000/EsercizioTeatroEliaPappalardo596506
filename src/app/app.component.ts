@@ -44,7 +44,6 @@ class ordinePrenotazione {
       var p = fila.map((nome, j) => {
         var btn = document.createElement('button'); 
         element.appendChild(btn);
-        console.log(element);
         btn.value = nome;
         btn.style.color = (nome !== "x") ? 'red' : 'green'; 
         btn.innerHTML = 'P' + (j + 1) + (i + 1); 
