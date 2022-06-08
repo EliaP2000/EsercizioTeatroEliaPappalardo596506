@@ -14,7 +14,7 @@ const resetTeatro = document.getElementById('reset');
 
 const nfilePlatea = 1;
 const npostiPlatea = 10;
-const nfilePalchi = 4;
+const nfilePalchi = 1;
 const npostiPalchi = 6;
 
 @Component({
