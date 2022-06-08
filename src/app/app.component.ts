@@ -73,47 +73,6 @@ function bottoni(){
   }
 }
 
-
-//CLASSE 
-/*
-class ordinePrenotazione {
-  prenotazione = [];
-  value: any;
-  style: CSSStyleDeclaration;
-  constructor(posti, elementName) { 
-    console.log(elementName)
-    var element = document.getElementById(elementName);
-    console.log(elementName)
-    console.log(element)
-    this.prenotazione = posti.map((fila, i) => { 
-      var p = fila.map((nome, j) => {
-        var btn = document.createElement('button'); 
-        element.appendChild(btn);
-        console.log(elementName)
-        btn.value = nome;
-        btn.style.color = (nome !== "x") ? 'red' : 'green'; 
-        btn.innerHTML = 'P' + (j + 1) + (i + 1); 
-        btn.addEventListener('click', this.selezionaPosto); 
-        return btn;
-      });
-      element.appendChild(document.createElement('br'));
-      return p;
-    });
-  }
-  selezionaPosto () { 
-    if (nomeUtente.value !== "" ) {
-      this.value = nomeUtente.value;
-      this.style.color = "red";
-      nomeUtente.value="";
-    }
-  };
-  toArray() { 
-    return this.prenotazione.map((fila) =>
-      fila.map( x => x.value)
-    );
-  }
-}
-*/
 //FUNZIONI
 
 function PrimoDiv(){
