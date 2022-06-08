@@ -61,24 +61,16 @@ class Teatro2 {
 } 
 
 function bottoni(){
-  var element = Teatro1.platea1
+  var element = Teatro1.platea1.value;
   var btn = document.createElement('button');
   element.appendChild(btn);
+  btn.value = nomeUtente.value;
+  btn.style.color = (nomeUtente.value !== "x") ? 'red' : 'green'; 
+  btn.innerHTML = 'P' + (j + 1) + (i + 1); 
+  btn.addEventListener('click', this.selezionaPosto); 
+  return btn;
 }
 
-function selezionaPosto() { 
-  if (nomeUtente.value !== "" ) {
-    this.value = nomeUtente.value;
-    this.style.color = "red";
-    nomeUtente.value="";
-  }
-}
-
-function toArray() { 
-  return this.prenotazione.map((fila) =>
-    fila.map( x => x.value)
-  );
-}
 
 //CLASSE 
 /*
