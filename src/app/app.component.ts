@@ -134,5 +134,3 @@ function SecondoDiv(){
     alert("stringa nulla: inserire nome");
   }
 }
-
-document.addEventListener('click', SecondoDiv)
