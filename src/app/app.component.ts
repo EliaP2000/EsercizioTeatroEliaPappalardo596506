@@ -131,9 +131,8 @@ function SecondoDiv(){
     div3.style.display = 'show';
   }
   else if(nomeUtente == null){
-    alert("stringa nulla");
-    alert("inserire nome");
+    alert("stringa nulla: inserire nome");
   }
 }
 
-
+document.addEventListener('click', SecondoDiv)
