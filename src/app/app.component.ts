@@ -25,7 +25,7 @@ const npostiPalchi = 6;
 export class AppComponent   
 {   
     teatro1: Teatro1[] = [
-      {platea: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill(""))},
+      {platea: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("x"))},
     ]
     teatro2: Teatro2[] = [
       {palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x"))}
