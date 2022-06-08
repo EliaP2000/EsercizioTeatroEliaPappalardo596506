@@ -122,7 +122,7 @@ function PrimoDiv(){
     div2.style.display = 'show';
   }
   else{
-    alert("chiave errata");
+    document.getElementById('rispostaChiave').innerHTML = 'OK';
   }
 }
 
