@@ -35,7 +35,13 @@ export class AppComponent
       }
     ]
     teatro2: Teatro2[] = [
-      {palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
+      {palchi1: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
+      palchi2: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
+      palchi3: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
+      palchi4: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
+      palchi5: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
+      palchi6: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
+      palchi7: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
     }
     ] 
 }   
@@ -49,7 +55,13 @@ class Teatro1 {
   platea7 : any[][];
 } 
 class Teatro2 {  
-  palchi: any[][];
+  palchi1: any[][];
+  palchi2: any[][];
+  palchi3: any[][];
+  palchi4: any[][];
+  palchi5: any[][];
+  palchi6: any[][];
+  palchi7: any[][];
 }  
 
 function selezionaPosto() { 
