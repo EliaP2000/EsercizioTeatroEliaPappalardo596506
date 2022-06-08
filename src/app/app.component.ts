@@ -62,7 +62,6 @@ class Teatro2 {
 
 function bottoni(){
   var element = Teatro1.platea1.value;
-  
   for(var i=0; i<10; i++){
     var btn = document.createElement('button');
     element.appendChild(btn);
