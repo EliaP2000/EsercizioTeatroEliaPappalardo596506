@@ -2,16 +2,6 @@ import { isNull } from '@angular/compiler/src/output/output_ast';
 import { Component, VERSION } from '@angular/core';
 import { ajax, AjaxResponse, AjaxRequest, AjaxError } from 'rxjs/ajax';
 
-
-@Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
-})
-export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
-}
-
 //VARIABILI
 
 const chiaveTeatro = document.getElementById('key') as unknown as string;
@@ -27,23 +17,57 @@ const npostiPlatea = 10;
 const nfilePalchi = 4;
 const npostiPalchi = 6;
 
-const Teatro = {
-  platea: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("x")),
-  palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x")),
-};
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
+})
+export class AppComponent   
+{   
+    teatro1: Teatro1[] = [
+      {platea: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill(""))},
+    ]
+    teatro2: Teatro2[] = [
+      {palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x"))}
+    ] 
+}   
+class Teatro1 {  
+    platea : any[][]; 
+} 
+class Teatro2 {  
+  palchi: any[][];
+}  
+
+function selezionaPosto() { 
+  if (nomeUtente.value !== "" ) {
+    this.value = nomeUtente.value;
+    this.style.color = "red";
+    nomeUtente.value="";
+  }
+}
+
+function toArray() { 
+  return this.prenotazione.map((fila) =>
+    fila.map( x => x.value)
+  );
+}
 
 //CLASSE 
-
+/*
 class ordinePrenotazione {
   prenotazione = [];
   value: any;
   style: CSSStyleDeclaration;
   constructor(posti, elementName) { 
+    console.log(elementName)
     var element = document.getElementById(elementName);
+    console.log(elementName)
+    console.log(element)
     this.prenotazione = posti.map((fila, i) => { 
       var p = fila.map((nome, j) => {
         var btn = document.createElement('button'); 
         element.appendChild(btn);
+        console.log(elementName)
         btn.value = nome;
         btn.style.color = (nome !== "x") ? 'red' : 'green'; 
         btn.innerHTML = 'P' + (j + 1) + (i + 1); 
@@ -67,7 +91,7 @@ class ordinePrenotazione {
     );
   }
 }
-
+*/
 //FUNZIONI
 
 function PrimoDiv(){
@@ -90,5 +114,4 @@ function SecondoDiv(){
   }
 }
 
-var plateaPrenotazione = new ordinePrenotazione(Teatro.platea, 'platea');
-var palchiPrenotazione = new ordinePrenotazione(Teatro.palchi, 'palchi');
+
