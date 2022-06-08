@@ -12,8 +12,10 @@ const div2 = document.getElementById('login') as HTMLElement;
 const div3 = document.getElementById('teatro') as HTMLElement;
 const resetTeatro = document.getElementById('reset');
 
-const nfilePlatea = 7;
-const npostiPlatea = 10;
+const nfilePlatea1 = 1;
+const npostiPlatea1 = 10;
+const nfilePlatea2 = 1;
+const npostiPlatea2 = 10;
 const nfilePalchi = 4;
 const npostiPalchi = 6;
 
@@ -25,14 +27,28 @@ const npostiPalchi = 6;
 export class AppComponent   
 {   
     teatro1: Teatro1[] = [
-      {platea: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill(""))}
+      {righe1: Array(nfilePlatea1).fill("").map(() => Array(npostiPlatea1).fill("P1")),
+      righe2: Array(nfilePlatea2).fill("").map(() => Array(npostiPlatea2).fill("P2")),
+      righe3: Array(nfilePlatea2).fill("").map(() => Array(npostiPlatea2).fill("P3")),
+      righe4: Array(nfilePlatea2).fill("").map(() => Array(npostiPlatea2).fill("P4")),
+      righe5: Array(nfilePlatea2).fill("").map(() => Array(npostiPlatea2).fill("P5")),
+      righe6: Array(nfilePlatea2).fill("").map(() => Array(npostiPlatea2).fill("P6")),
+      righe7: Array(nfilePlatea2).fill("").map(() => Array(npostiPlatea2).fill("P7")),
+
+    }
     ]
     teatro2: Teatro2[] = [
-      {palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("x"))}
+      {palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3"))}
     ] 
 }   
 class Teatro1 {  
-    platea : any[][]; 
+    righe1 : any[][]; 
+    righe2 : any[][];
+    righe3 : any[][];
+    righe4 : any[][];
+    righe5 : any[][];
+    righe6 : any[][];
+    righe7 : any[][];
 } 
 class Teatro2 {  
   palchi: any[][];
