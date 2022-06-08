@@ -1,9 +1,11 @@
 import { isNull } from '@angular/compiler/src/output/output_ast';
+import { Observable } from 'rxjs'; //viene importata la funzione per l'Observable
 import { Component, VERSION } from '@angular/core';
 import { ajax, AjaxResponse, AjaxRequest, AjaxError } from 'rxjs/ajax';
 
 //VARIABILI
-
+const URL: string =
+  'https://eu-central-1.aws.data.mongodb-api.com/app/kvaas-giwjg/endpoint';
 const chiaveTeatro = document.getElementById('key') as unknown as string;
 const nomeUtente = document.getElementById('nome') as HTMLInputElement;
 const Keyteatro = "6701ca6a";
@@ -92,4 +94,35 @@ function SecondoDiv(){
   else if(nomeUtente == null){
     alert("stringa nulla: inserire nome");
   }
+}
+
+function getValue() { //creazione dell'Observable per la get
+  const obs = ajax({
+    method: 'GET',
+    url: URL + '/get?key=' + chiaveTeatro,
+    crossDomain: true,
+  });
+  obs.subscribe({
+    next: (res: AjaxResponse<any>) => {
+      document.getElementById('rispostaChiave').innerHTML = res.response; //se premuto il pulsante get da in output il valore preso nel set
+    },
+    error: (err: AjaxError) => console.error(err.response),
+  });
+}
+
+function setValue() { //creazione dell'Observable per la set
+
+  console.log(document.getElementById('data'));
+  const obs = ajax({
+    method: 'POST',
+    url:URL + '/set?key=' + chiaveTeatro,
+    crossDomain: true,
+    body: document.getElementById('key'),
+  })
+  obs.subscribe({
+    next: (res: AjaxResponse<any>) => {
+      document.getElementById('rispostaChiave').innerHTML = 'Ok!'; //response se il nuovo valore venisse settato
+    },
+    error: (err: AjaxError) => console.error(err.response),
+  });
 }
