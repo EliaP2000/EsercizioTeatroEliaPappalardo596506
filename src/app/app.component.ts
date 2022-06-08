@@ -62,13 +62,15 @@ class Teatro2 {
 
 function bottoni(){
   var element = Teatro1.platea1.value;
-  var btn = document.createElement('button');
-  element.appendChild(btn);
-  btn.value = nomeUtente.value;
-  btn.style.color = (nomeUtente.value !== "x") ? 'red' : 'green'; 
-  btn.innerHTML = 'P' + (j + 1) + (i + 1); 
-  btn.addEventListener('click', this.selezionaPosto); 
-  return btn;
+  for(var i=0; i<10; i++){
+    var btn = document.createElement('button');
+    element.appendChild(btn);
+    btn.value = nomeUtente.value;
+    btn.style.color = (nomeUtente.value !== "x") ? 'red' : 'green'; 
+    btn.innerHTML = 'P' + (i + 1); 
+    btn.addEventListener('click', this.selezionaPosto); 
+    return btn;
+  }
 }
 
 
