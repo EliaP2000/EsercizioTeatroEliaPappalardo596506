@@ -35,10 +35,11 @@ export class AppComponent
       }
     ]
     teatro2: Teatro2[] = [
-      {palchi1: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
-      palchi2: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
-      palchi3: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
-      palchi4: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
+      {
+        palchi1: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("PA1")),
+        palchi2: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("PA2")),
+        palchi3: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("PA3")),
+        palchi4: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("PA4")),
     }
     ] 
 }   
