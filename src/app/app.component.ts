@@ -51,13 +51,20 @@ class Teatro1 {
   platea5 : any[][];
   platea6 : any[][];
   platea7 : any[][];
+  static platea1: any;
 } 
 class Teatro2 {  
   palchi1: any[][];
   palchi2: any[][];
   palchi3: any[][];
   palchi4: any[][];
-}  
+} 
+
+function bottoni(){
+  var element = Teatro1.platea1.value 
+  var btn = document.createElement('button');
+  
+}
 
 function selezionaPosto() { 
   if (nomeUtente.value !== "" ) {
