@@ -25,15 +25,14 @@ const npostiPalchi = 6;
 export class AppComponent   
 {   
     teatro1: Teatro1[] = [
-      {platea1: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P1")),
-      platea2: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P2")),
-      platea3: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P3")),
-      platea4: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P4")),
-      platea5: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P5")),
-      platea6: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P6")),
-      platea7: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P7")),
-
-    }
+      { platea1: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P1")),
+        platea2: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P2")),
+        platea3: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P3")),
+        platea4: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P4")),
+        platea5: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P5")),
+        platea6: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P6")),
+        platea7: Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("P7")),
+      }
     ]
     teatro2: Teatro2[] = [
       {palchi: Array(nfilePalchi).fill("").map(() => Array(npostiPalchi).fill("P3")),
