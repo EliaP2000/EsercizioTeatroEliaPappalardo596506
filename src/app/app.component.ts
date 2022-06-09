@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Esercizio Angular';
-  bottoni = [];
+  bottoni = []
   constructor(){
     this.bottoni = Array(10).fill(7).map((x,i)=>i);
   }
