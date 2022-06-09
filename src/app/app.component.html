@@ -1,8 +1,13 @@
 <h1> {{title}} </h1>
+<p>
+<button *ngFor='let posti of bottoni' >
+  <button><b>{{posti}}</b></button>
+</button>
+</p>
+<p>
+<button *ngFor='let posti of bottoni1' >
+<button><b>{{posti}}</b></button>
+</button>
+<p>
 
-<ul>
-  <li *ngFor='let posti of bottoni' >
-    <button><b>{{posti.nome}}</b></button> {{posti.temperatura}}
-  </li>
-</ul>
 
