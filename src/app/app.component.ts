@@ -7,14 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Esercizio Angular';
-  cities = [];
+  bottoni = [];
   constructor(){
-    this.cities = Array(10).fill(56).map((x,i)=>i);
+    this.bottoni = Array(10).fill(7).map((x,i)=>i);
   }
 }
-/*export class SampleComponent {
-  constructor() {
-    this.cities = Array(5).fill().map((x,i)=>i); // [0,1,2,3,4]
-    this.numbers = Array(5).fill(4); // [4,4,4,4,4]
-  }
-}*/

@@ -1,11 +1,8 @@
 <h1> {{title}} </h1>
 
 <ul>
-  <li *ngFor='let city of cities' >
-    <button ><b>P1{{city.nome}}</b></button> {{city.temperatura}}
+  <li *ngFor='let posti of bottoni' >
+    <button><b>{{posti.nome}}</b></button> {{posti.temperatura}}
   </li>
 </ul>
 
-<!--<ul>
-<li *ngFor="let number of numbers">{{number}}</li>
-</ul>-->
