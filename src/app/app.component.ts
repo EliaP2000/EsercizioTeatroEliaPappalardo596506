@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Esercizio Angular';
+  constructor(){
+    this.cities = Array(5).fill().map((x,i)=>i);
+    this.cities = Array(5).fill(4);
+  }
   cities = [
     {
       nome: 'Torino',
@@ -20,3 +24,9 @@ export class AppComponent {
     }
   ];
 }
+/*export class SampleComponent {
+  constructor() {
+    this.cities = Array(5).fill().map((x,i)=>i); // [0,1,2,3,4]
+    this.numbers = Array(5).fill(4); // [4,4,4,4,4]
+  }
+}*/
