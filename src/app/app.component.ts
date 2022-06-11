@@ -6,14 +6,29 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent {
+  public value: any;
+  public style: CSSStyleDeclaration;
   title = 'Teatro';
   bottoni = [];
   bottoni1 = [];
   constructor(){
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
-  }
+    for(var i=0; i<this.bottoni.length; i++)
+      addEventListener('click', this.selezionaPosto);
+  };
+  selezionaPosto(){
+    if (prenotazione.value!=="") {
+      this.value = prenotazione.value;
+      this.style.color = "red";
+      prenotazione.value="";
+    }
+    else
+      nome.innerHTML = this.value;
+  };
 }
+const prenotazione = document.getElementById('prenota') as HTMLInputElement;
+const nome = document.getElementById('nome') as HTMLElement;
 /*
 function PrimoDiv(){
   if(chiaveTeatro == Keyteatro){
@@ -64,5 +79,3 @@ function setValue() { //creazione dell'Observable per la set
     error: (err: AjaxError) => console.error(err.response),
   });
 }*/
-
-
