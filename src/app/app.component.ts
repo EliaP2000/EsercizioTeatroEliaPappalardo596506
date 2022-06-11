@@ -15,9 +15,9 @@ export class AppComponent {
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     for(var i=0; i<this.bottoni.length; i++)
-      addEventListener('click', this.selezionaPosto);
+      document.addEventListener('click', this.selezionaPosto);
   };
-  selezionaPosto(){
+selezionaPosto(){
     if (prenotazione.value!=="") {
       this.value = prenotazione.value;
       this.style.color = "red";
@@ -26,9 +26,14 @@ export class AppComponent {
     else
       nome.innerHTML = this.value;
   };
+toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
+    return this.bottoni.map((fila) =>
+      fila.map( x => x.value)
+    );
+  };
 }
 const prenotazione = document.getElementById('prenota') as HTMLInputElement;
-const nome = document.getElementById('nome') as HTMLElement;
+const nome = document.getElementById('nome') as HTMLInputElement;
 /*
 function PrimoDiv(){
   if(chiaveTeatro == Keyteatro){
