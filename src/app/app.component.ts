@@ -13,7 +13,7 @@ export class AppComponent {
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
   }
-
+}
 /*
 function PrimoDiv(){
   if(chiaveTeatro == Keyteatro){
