@@ -15,10 +15,10 @@ export class AppComponent {
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     var btn = document.createElement('button');
     btn.addEventListener('click', this.selezionaPosto);
-    console.log(btn)
   };
 selezionaPosto(){
     if (prenotazione.value!=="") {
+      console.log(prenotazione)
       this.value = prenotazione.value;
       this.style.color = "red";
       prenotazione.value="";
