@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 const prenotazione = document.getElementById('prenota') as HTMLInputElement;
+console.log(prenotazione)
 const nome = document.getElementById('nome') as HTMLInputElement;
 @Component({
   selector: 'my-app',
