@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+const prenotazione = document.getElementById('prenota') as HTMLInputElement;
+const nome = document.getElementById('nome') as HTMLInputElement;
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -15,10 +16,11 @@ export class AppComponent {
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     var btn = document.createElement('button');
     btn.addEventListener('click', this.selezionaPosto);
+    console.log(btn)
   };
 selezionaPosto(){
+  console.log(this.value)
     if (prenotazione.value!=="") {
-      console.log(prenotazione)
       this.value = prenotazione.value;
       this.style.color = "red";
       prenotazione.value="";
@@ -32,8 +34,7 @@ toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
     );
   };
 }
-const prenotazione = document.getElementById('prenota') as HTMLInputElement;
-const nome = document.getElementById('nome') as HTMLInputElement;
+
 /*
 function PrimoDiv(){
   if(chiaveTeatro == Keyteatro){
