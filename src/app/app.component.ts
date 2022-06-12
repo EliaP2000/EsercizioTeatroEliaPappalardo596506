@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent {
-  public value: any;
-  public style: CSSStyleDeclaration;
+  private value: any;
+  private style: CSSStyleDeclaration;
   bottoni = [];
   bottoni1 = [];
   constructor(){
