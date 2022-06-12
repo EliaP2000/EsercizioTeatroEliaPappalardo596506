@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public value: any;
   public style: CSSStyleDeclaration;
-  title = 'Teatro';
   bottoni = [];
   bottoni1 = [];
   constructor(){
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     var btn = document.createElement('button');
+    console.log(this)
     btn.addEventListener('click', this.selezionaPosto);
   };
 selezionaPosto(){
