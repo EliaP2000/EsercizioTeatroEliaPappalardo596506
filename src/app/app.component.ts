@@ -19,7 +19,6 @@ export class AppComponent {
     console.log(btn)
   };
 selezionaPosto(){
-  console.log(this.value)
     if (prenotazione.value!=="") {
       this.value = prenotazione.value;
       this.style.color = "red";
