@@ -1,5 +1,8 @@
 <h1> Teatro </h1>
-<button id='setbtn'>Set</button> <input id='data' type='text'/>
+<p>Scrivi il tuo nome, premi il pulsante prenota e clicca il posto che vuoi</p>
+<br>
+<button id='prenota'>Prenota</button> <input id='data' type='text'/>
+<p id='nome'></p>
 <p>
 <button *ngFor='let posti of bottoni' >
   <p id='bottoni'>{{posti}}</p>
@@ -10,5 +13,3 @@
   <p id='bottoni'>{{posti}}</p>
 </button>
 </p>
-<button id='getbtn'>Get</button>
-  <div id='output'></div>
