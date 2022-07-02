@@ -13,8 +13,8 @@ export class AppComponent {
   bottoni = [];
   bottoni1 = [];
   constructor(){
-    this.bottoni = Array(71).fill(0).map((x,i)=>i);
-    this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
+    this.bottoni = new Array(71).fill(0).map((x,i)=>i);
+    this.bottoni1 = new Array(25).fill(0).map((x,i)=>i);
     for(var i=0; i<this.bottoni.length; i++){
       this.bottoni[i].value.addEventListener('click', this.selezionaPosto);
     }
