@@ -17,6 +17,7 @@ export class AppComponent {
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     for(var i=0; i<this.bottoni.length; i++){
       var valoreBottone = this.bottoni[i];
+      console.log(this.bottoni[i])
       valoreBottone.addEventListener('click', this.selezionaPosto, false);
     }
     for(var i=0; i<this.bottoni1.length; i++){
