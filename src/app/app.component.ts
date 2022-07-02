@@ -4,8 +4,8 @@ import { ajax, AjaxResponse, AjaxRequest, AjaxError } from 'rxjs/ajax'; //vengon
 /*const prenotazione = document.getElementById('prenota') as HTMLInputElement;
 console.log(prenotazione)
 const nome = document.getElementById('nome') as HTMLInputElement;*/
-//const prenotazione = document.getElementById('prenota').addEventListener('click', setValue);
-//const nome = document.getElementById('nome').addEventListener('click', getValue);
+document.getElementById('setbtn').addEventListener('click', setValue);
+document.getElementById('getbtn').addEventListener('click', getValue);
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
