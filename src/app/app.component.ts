@@ -16,8 +16,12 @@ export class AppComponent {
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     for(var i=0; i<this.bottoni.length; i++){
-      var valoreBottone = this.bottoni[i].value;
+      var valoreBottone = this.bottoni[i];
       valoreBottone.addEventListener('click', this.selezionaPosto, false);
+    }
+    for(var i=0; i<this.bottoni1.length; i++){
+      var valoreBottone1 = this.bottoni1[i];
+      valoreBottone1.addEventListener('click', this.selezionaPosto, false);
     }
   };
 selezionaPosto(){
