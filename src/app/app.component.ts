@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
-const prenotazione = document.getElementById('prenota') as HTMLInputElement;
+import { Observable } from 'rxjs'; //viene importata la funzione per l'Observable
+import { ajax, AjaxResponse, AjaxRequest, AjaxError } from 'rxjs/ajax'; //vengono importate le funzioni per ajax
+/*const prenotazione = document.getElementById('prenota') as HTMLInputElement;
 console.log(prenotazione)
-const nome = document.getElementById('nome') as HTMLInputElement;
+const nome = document.getElementById('nome') as HTMLInputElement;*/
+//const prenotazione = document.getElementById('prenota').addEventListener('click', setValue);
+//const nome = document.getElementById('nome').addEventListener('click', getValue);
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -15,7 +19,7 @@ export class AppComponent {
   constructor(){
     this.bottoni = new Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = new Array(25).fill(0).map((x,i)=>i);
-    for(var i=0; i<this.bottoni.length; i++){
+   /* for(var i=0; i<this.bottoni.length; i++){
       this.bottoni[i].value.addEventListener('click', this.selezionaPosto);
     }
   };
@@ -27,13 +31,46 @@ selezionaPosto(){
     }
     else
       nome.innerHTML = this.value;
-  };
+  };*/};
 toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
     return this.bottoni.map((fila) =>
       fila.map( x => x.value)
     );
   };
 }
+function getValue() { //creazione dell'Observable per la get
+  const obs = ajax({
+    method: 'GET',
+    url: URL + '/get?key=' + '6701ca6a',
+    crossDomain: true,
+  });
+  obs.subscribe({
+    next: (res: AjaxResponse<any>) => {
+      document.getElementById('output').innerHTML = res.response; //se premuto il pulsante get da in output il valore preso nel set
+    },
+    error: (err: AjaxError) => console.error(err.response),
+  });
+}
+
+function setValue() { //creazione dell'Observable per la set
+  console.log(document.getElementById('data'));
+  const obs = ajax({
+    method: 'POST',
+    url:URL + '/set?key=' + '6701ca6a',
+    crossDomain: true,
+    body: (document.getElementById('data') as HTMLInputElement).value
+  })
+  obs.subscribe({
+    next: (res: AjaxResponse<any>) => {
+      document.getElementById('output').innerHTML = 'Ok!'; //response se il nuovo valore venisse settato
+    },
+    error: (err: AjaxError) => console.error(err.response),
+  });
+}
+function mostraTeatro() { //mostra l'array risultante
+  console.log(plateaPrenotazione.toArray());
+ }
+var plateaPrenotazione = new AppComponent();
 
 /*
 function PrimoDiv(){
