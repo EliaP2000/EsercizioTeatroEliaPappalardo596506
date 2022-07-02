@@ -15,9 +15,10 @@ export class AppComponent {
   constructor(){
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
-    /*for(var i=0; i<this.bottoni.length; i++){
-      this.bottoni[i].value.addEventListener('click', this.selezionaPosto);
-    }*/
+    for(var i=0; i<this.bottoni.length; i++){
+      var valoreBottone = this.bottoni[i].value;
+      valoreBottone.addEventListener('click', this.selezionaPosto, false);
+    }
   };
 selezionaPosto(){
     if (prenotazione.value!=="") {
@@ -33,17 +34,4 @@ toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
       fila.map( x => x.value)
     );
   };
-}
-
-var comments = document.getElementsByClassName('button');
-var numComments = comments.length;
-
-function showComment() {
-  var place = document.getElementById('textfield');
-  var commentBox = document.createElement('textarea');
-  place.appendChild(commentBox);
-}
-
-for (var i = 0; i < numComments; i++) {
-  comments[i].addEventListener('click', showComment, false);
 }
