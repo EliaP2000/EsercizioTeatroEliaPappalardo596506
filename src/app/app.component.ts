@@ -50,7 +50,3 @@ function mostraTeatro() { //mostra l'array risultante
 //chiamata e inserimento nelle variabili della funzione OrdinePrenotazione per prenotare i posti in platea e sui palchi
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
-
-//al click richiama la funzione mostraTeatro che richiama la funzione toArray e mostrando in console il teatro come un array di stringhe e non di pulsanti
-document.getElementById('Vedi');
-document.addEventListener('click', mostraTeatro);
