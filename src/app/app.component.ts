@@ -16,8 +16,8 @@ export class AppComponent {
   constructor(){
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
-    for (const box of boxes) {
-      box.addEventListener('click', function onClick() {
+    for (const bottoni of ClasseBottoni) {
+      bottoni.addEventListener('click', function onClick() {
         console.log('box clicked');
       });
     }
@@ -41,14 +41,3 @@ toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
     );
   };
 }
-
-const boxes = document.getElementsByClassName('box');
-console.log(boxes); // 👉️ [div.box, div.box, div.box]
-
-// ✅ addEventListener to first box
-boxes[0].addEventListener('click', function onClick() {
-  console.log('box clicked');
-});
-
-// ✅ addEventListener to all boxes
-
