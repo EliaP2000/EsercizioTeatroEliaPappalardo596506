@@ -18,7 +18,6 @@ export class AppComponent {
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     for (const bottoni of ClasseBottoni) {
       bottoni.addEventListener('click', function onClick() {
-        console.log('box clicked');
       });
     }
     /*for(var i=0; i<this.bottoni1.length; i++){
