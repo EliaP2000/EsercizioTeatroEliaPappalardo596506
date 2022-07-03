@@ -16,14 +16,10 @@ export class AppComponent {
   constructor(){
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
-    for (const bottoni of ClasseBottoni) {
-      bottoni.addEventListener('click', function onClick() {
-      });
-    }
-    /*for(var i=0; i<this.bottoni1.length; i++){
+    for(var i=0; i<this.bottoni1.length; i++){
       var valoreBottone1 = this.bottoni1[i];
-      valoreBottone1.addEventListener('click', this.selezionaPosto, false);
-    }*/
+      valoreBottone1.addEventListener('click', this.selezionaPosto(), false);
+    }
   };
 selezionaPosto(){
     if (prenotazione.value!=="") {
@@ -40,3 +36,7 @@ toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
     );
   };
 }
+/*for (const bottoni of ClasseBottoni) {
+  bottoni.addEventListener('click', function onClick() {
+  });
+}*/
