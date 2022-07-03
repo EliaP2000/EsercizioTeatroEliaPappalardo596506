@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-const prenotazione = document.getElementById('prenota');
+const prenotazione = document.getElementById("prenota")as HTMLInputElement;;
 console.log(prenotazione)
-let info = document.getElementById('data') as unknown as string;
+let info = document.getElementById("data") as unknown as string;
 console.log(info)
-const nome = document.getElementById('nome') as HTMLInputElement;
+const nome = document.getElementById("nome") as HTMLInputElement;
 console.log(nome)
-const ClasseBottoni = document.getElementsByClassName('bottoni');
+const ClasseBottoni = document.getElementsByClassName("bottoni");
 console.log(ClasseBottoni)
 
 @Component({
@@ -23,12 +23,12 @@ export class AppComponent {
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     console.log(this.bottoni)
     console.log(this.bottoni1)
-    prenotazione.addEventListener('click', prenotazione.sceltaPosto);
+    prenotazione.addEventListener("click", prenotazione.sceltaPosto);
   };
 sceltaPosto(){
   for(var i=0; i<this.bottoni1.length; i++){
     var valoreBottone1 = this.bottoni1[i];
-   valoreBottone1.addEventListener('click', this.bottoni[i].selezionaPosto, false);
+    valoreBottone1.addEventListener("click", this.bottoni[i].selezionaPosto, false);
   }
 }
 selezionaPosto(){
