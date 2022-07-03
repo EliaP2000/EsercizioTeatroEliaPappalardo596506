@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-let prenotazione = document.getElementById('prenota')as unknown as string;
+const prenotazione = document.getElementById('prenota');
 console.log(prenotazione)
+let info = document.getElementById('data') as unknown as string;
+console.log(info)
 const nome = document.getElementById('nome') as HTMLInputElement;
 console.log(nome)
 const ClasseBottoni = document.getElementsByClassName('bottoni');
@@ -27,9 +29,9 @@ export class AppComponent {
     }
   };
 selezionaPosto(){
-      this.value = prenotazione;
+      this.value = info;
       this.style.color = "red";
-      prenotazione="";
+      info="";
   };
 toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
     return this.bottoni.map((fila) =>
