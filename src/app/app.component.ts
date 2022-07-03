@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-const prenotazione = document.getElementById('prenota') as HTMLInputElement;
+let prenotazione = document.getElementById('prenota')as unknown as string;
 console.log(prenotazione)
 const nome = document.getElementById('nome') as HTMLInputElement;
 console.log(nome)
@@ -23,21 +23,17 @@ export class AppComponent {
     console.log(this.bottoni1)
     for(var i=0; i<this.bottoni1.length; i++){
       var valoreBottone1 = this.bottoni1[i];
-      valoreBottone1.addEventListener('click', this.selezionaPosto(), false);
+      valoreBottone1.addEventListener('click', this.bottoni[i].selezionaPosto, false);
     }
   };
 selezionaPosto(){
-    if (prenotazione.value!=="") {
-      this.value = prenotazione.value;
+      this.value = prenotazione;
       this.style.color = "red";
-      prenotazione.value="";
-    }
-    else
-      nome.innerHTML = this.value;
+      prenotazione="";
   };
 toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
     return this.bottoni.map((fila) =>
-      fila.map( x => x.value)
+      fila.map(x => x.value)
     );
   };
 }
