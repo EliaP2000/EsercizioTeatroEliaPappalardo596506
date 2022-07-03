@@ -41,7 +41,16 @@ toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
     );
   };
 }
-/*for (const bottoni of ClasseBottoni) {
-  bottoni.addEventListener('click', function onClick() {
-  });
-}*/
+
+function mostraTeatro() { //mostra l'array risultante
+  console.log(plateaPrenotazione.toArray());
+  console.log(palchiPrenotazione.toArray());
+ }
+
+//chiamata e inserimento nelle variabili della funzione OrdinePrenotazione per prenotare i posti in platea e sui palchi
+var plateaPrenotazione = new AppComponent();
+var palchiPrenotazione = new AppComponent();
+
+//al click richiama la funzione mostraTeatro che richiama la funzione toArray e mostrando in console il teatro come un array di stringhe e non di pulsanti
+document.getElementById('Vedi');
+document.addEventListener('click', mostraTeatro);
