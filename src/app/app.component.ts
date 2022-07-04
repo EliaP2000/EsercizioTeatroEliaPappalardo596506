@@ -3,7 +3,7 @@ let prenotazione = document.getElementById("prenota") as HTMLButtonElement;
 let info = document.getElementById("data") as unknown as string;
 const nome = document.getElementById("nome") as HTMLInputElement;
 const ClasseBottoni = document.getElementsByClassName("bottoni");
-const divTeatro = document.getElementById("mostraTeatro");
+const divTeatro = document.getElementsByClassName("divTeatro");
 showTeatro();
 
 @Component({
