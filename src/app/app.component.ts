@@ -26,6 +26,7 @@ export class AppComponent {
     document.addEventListener("click", this.selezionaPosto, false);
   };
 selezionaPosto(){
+  console.log(this.bottoni.length)
     var lunghezzaArray = this.bottoni.length; 
     for(var i=0; i<lunghezzaArray; i++){
       if(this.bottoni[i] == this.bottoni[i].addEventListener("click", true)){
