@@ -31,7 +31,10 @@ public selezionaPosto(){
 }
 
 function showTeatro(){
-  divTeatro.style.color = "visibile";
+  divTeatro.style.color = "visibility:visibile";
 }
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
+
+document.addEventListener('click', showTeatro);
+
