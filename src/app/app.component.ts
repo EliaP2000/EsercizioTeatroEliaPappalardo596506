@@ -26,8 +26,8 @@ export class AppComponent {
     document.addEventListener("click", this.selezionaPosto, true);
   };
 selezionaPosto(){
-  var length = this.bottoni.length;
-    for(var i=0; i<length; i++){
+  var lunghezzaArray = this.bottoni.length;
+    for(var i=0; i<lunghezzaArray; i++){
       if(this.bottoni[i] == this.bottoni[i].addEventListener("click", true)){
         this.bottoni[i].value = info;
         this.bottoni[i].style.color = "red";
