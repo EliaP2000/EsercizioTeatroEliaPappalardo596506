@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-const prenotazione = document.getElementById("prenota") as HTMLButtonElement;
+let prenotazione = document.getElementById("prenota") as HTMLButtonElement;
 console.log(prenotazione)
 let info = document.getElementById("data") as unknown as string;
 console.log(info)
