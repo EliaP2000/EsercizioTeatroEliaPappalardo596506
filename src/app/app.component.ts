@@ -31,6 +31,3 @@ public selezionaPosto(){
 
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
-
-console.log(plateaPrenotazione.selezionaPosto);
-console.log(palchiPrenotazione.selezionaPosto);
