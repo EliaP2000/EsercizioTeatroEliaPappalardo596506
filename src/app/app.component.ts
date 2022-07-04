@@ -23,11 +23,11 @@ export class AppComponent {
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     console.log(this.bottoni)
     console.log(this.bottoni1)
-    var length = this.bottoni.length;
-    prenotazione.addEventListener("click", prenotazione.selezionaPosto, true);
+    document.addEventListener("click", this.selezionaPosto, true);
   };
 selezionaPosto(){
-    for(var i=0; i<this.bottoni.length; i++){
+  var length = this.bottoni.length;
+    for(var i=0; i<length; i++){
       if(this.bottoni[i] == this.bottoni[i].addEventListener("click", true)){
         this.bottoni[i].value = info;
         this.bottoni[i].style.color = "red";
