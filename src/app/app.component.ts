@@ -23,7 +23,7 @@ export class AppComponent {
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     console.log(this.bottoni)
     console.log(this.bottoni1)
-    prenotazione.addEventListener("click", this.selezionaPosto, false);
+    document.addEventListener("click", this.selezionaPosto, false);
   };
 selezionaPosto(){
     for(var i=0; i<this.bottoni.length; i++){
