@@ -23,7 +23,6 @@ export class AppComponent {
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     console.log(this.bottoni)
     console.log(this.bottoni1)
-    document.addEventListener("mousemove", this.toArray);
     document.addEventListener("click", this.selezionaPosto, false);
   };
 selezionaPosto(){
@@ -37,11 +36,6 @@ selezionaPosto(){
     }
   };
 }
-
-function mostraTeatro() { //mostra l'array risultante
-  console.log(plateaPrenotazione.toArray());
-  console.log(palchiPrenotazione.toArray());
- }
 
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
