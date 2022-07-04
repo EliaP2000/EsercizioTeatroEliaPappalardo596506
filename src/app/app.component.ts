@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
-function selezionaPosto();
 let prenotazione = document.getElementById("prenota") as HTMLButtonElement;
-console.log(prenotazione)
 let info = document.getElementById("data") as unknown as string;
-console.log(info)
 const nome = document.getElementById("nome") as HTMLInputElement;
-console.log(nome)
 const ClasseBottoni = document.getElementsByClassName("bottoni");
-console.log(ClasseBottoni)
 
 @Component({
   selector: 'my-app',
@@ -22,8 +17,6 @@ export class AppComponent {
   constructor(){
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
-    console.log(this.bottoni)
-    console.log(this.bottoni1)
   };
 selezionaPosto(){
     for(var i=0; i<this.bottoni.length; i++){
@@ -38,3 +31,6 @@ selezionaPosto(){
 
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
+
+console.log(plateaPrenotazione.selezionaPosto);
+console.log(palchiPrenotazione.selezionaPosto);
