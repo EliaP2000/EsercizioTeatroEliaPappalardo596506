@@ -36,11 +36,6 @@ selezionaPosto(){
       }
     }
   };
-toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
-    return this.bottoni.map((fila) =>
-      fila.map(x => x.value)
-    );
-  };
 }
 
 function mostraTeatro() { //mostra l'array risultante
