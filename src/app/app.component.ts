@@ -25,8 +25,7 @@ export class AppComponent {
     console.log(this.bottoni1)
     prenotazione.addEventListener("click", prenotazione.sceltaPosto(),{
       for(var i=0; i<this.bottoni1.length; i++){
-        var valoreBottone1 = this.bottoni1[i];
-        valoreBottone1.addEventListener("click", this.bottoni[i].selezionaPosto, false);
+        this.bottoni1[i].addEventListener("click", this.bottoni[i].selezionaPosto, false);
       }
     });
   };
