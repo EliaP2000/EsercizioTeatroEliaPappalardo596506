@@ -4,12 +4,12 @@
 <button id="prenota">Prenota</button> <input id='data' type='text'/>
 <p id='nome'></p>
 <p>
-<button *ngFor='let posti of bottoni' (click)="mostra_prenotazione(posto_PL, i, j, platea)">
-  <p>{{posti}}</p>
+<button *ngFor='let platea of bottoni' (click)="selezionaPosto(posto_PL, i, j, platea)">
+  <p>{{platea}}</p>
 </button>
 </p>
 <p>
-<button *ngFor='let posti of bottoni1' class='bottoni'>
-  <p>{{posti}}</p>
+<button *ngFor='let palchi of bottoni1' class='bottoni'>
+  <p>{{palchi}}</p>
 </button>
 </p>
