@@ -24,16 +24,15 @@ export class AppComponent {
     console.log(this.bottoni)
     console.log(this.bottoni1)
     var length = this.bottoni.length;
-    prenotazione.addEventListener("click", prenotazione.function(){
-      for(var i=0; i<length; i++){
-        this.bottoni[i].addEventListener("click", this.bottoni[i].selezionaPosto, false);
-      }
-    }, false);
+    prenotazione.addEventListener("click", prenotazione.selezionaPosto(), false);
   };
 selezionaPosto(){
-      this.value = info;
-      this.style.color = "red";
-      info="";
+    for(var i=0; i<length; i++){
+      this.bottoni[i].addEventListener("click", this.bottoni[i].selezionaPosto, false);
+    }
+    this.value = info;
+    this.style.color = "red";
+    info="";
   };
 toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
     return this.bottoni.map((fila) =>
