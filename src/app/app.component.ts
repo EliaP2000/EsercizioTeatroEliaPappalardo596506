@@ -4,6 +4,7 @@ let info = document.getElementById("data") as unknown as string;
 const nome = document.getElementById("nome") as HTMLInputElement;
 const ClasseBottoni = document.getElementsByClassName("bottoni");
 const divTeatro = document.getElementById("mostraTeatro")
+showTeatro();
 
 @Component({
   selector: 'my-app',
@@ -30,11 +31,9 @@ public selezionaPosto(){
   };
 }
 
-function showTeatro(){
-  divTeatro.style.color = "visibility:visibile";
-}
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
 
-document.addEventListener('click', showTeatro);
-
+function showTeatro() {
+  divTeatro.style.color = "visibility:visibile";
+}
