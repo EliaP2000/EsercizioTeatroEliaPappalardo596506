@@ -28,7 +28,7 @@ export class AppComponent {
   };
 selezionaPosto(){
     for(var i=0; i<this.bottoni.length; i++){
-      if(this.bottoni[i])){
+      if(this.bottoni[i] == this.bottoni[i].addEventListener("click", true)){
         this.bottoni[i].value = info;
         this.bottoni[i].style.color = "red";
         info="";
