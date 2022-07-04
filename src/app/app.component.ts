@@ -35,5 +35,5 @@ var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
 
 function showTeatro() {
-  divTeatro.style.color = "visibility:visibile";
+  divTeatro.style.visibility= "visibile";
 }
