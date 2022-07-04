@@ -6,6 +6,7 @@ const ClasseBottoni = document.getElementsByClassName("bottoni");
 const divTeatro = document.getElementsByClassName("divTeatro");
 showTeatro();
 
+
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -34,6 +35,8 @@ public selezionaPosto(){
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
 
+
 function showTeatro() {
+  style: CSSStyleDeclaration;
   divTeatro.style.visibility= "visibile";
 }
