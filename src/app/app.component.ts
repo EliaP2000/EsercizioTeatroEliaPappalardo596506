@@ -23,10 +23,10 @@ export class AppComponent {
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
     console.log(this.bottoni)
     console.log(this.bottoni1)
-    var lunghezzaArray = this.bottoni.length; 
-    document.addEventListener("click", this.selezionaPosto(lunghezzaArray), true);
+    document.addEventListener("click", this.selezionaPosto, false);
   };
-selezionaPosto(lunghezzaArray){
+selezionaPosto(){
+    var lunghezzaArray = this.bottoni.length; 
     for(var i=0; i<lunghezzaArray; i++){
       if(this.bottoni[i] == this.bottoni[i].addEventListener("click", true)){
         this.bottoni[i].value = info;
