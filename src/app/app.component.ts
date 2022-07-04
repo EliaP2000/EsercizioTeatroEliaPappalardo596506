@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+function selezionaPosto();
 let prenotazione = document.getElementById("prenota") as HTMLButtonElement;
 console.log(prenotazione)
 let info = document.getElementById("data") as unknown as string;

@@ -4,7 +4,7 @@
 <button id="prenota">Prenota</button> <input id='data' type='text'/>
 <p id='nome'></p>
 <p>
-<button *ngFor='let platea of bottoni' (click)="selezionaPosto()">
+<button *ngFor='let platea of bottoni' onclick="selezionaPosto()">
   <p>{{platea}}</p>
 </button>
 </p>
