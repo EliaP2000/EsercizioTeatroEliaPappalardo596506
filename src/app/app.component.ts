@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-const prenotazione = (document.getElementById("prenota") as HTMLButtonElement).value;
+const prenotazione = document.getElementById("prenota") as HTMLButtonElement;
 console.log(prenotazione)
 let info = document.getElementById("data") as unknown as string;
 console.log(info)
@@ -24,7 +24,7 @@ export class AppComponent {
     console.log(this.bottoni)
     console.log(this.bottoni1)
     var length = this.bottoni.length;
-    prenotazione.addEventListener("click", prenotazione.selezionaPosto, true);
+    //prenotazione.addEventListener("click", prenotazione.selezionaPosto, true);
   };
 selezionaPosto(){
     for(var i=0; i<this.bottoni.length; i++){
