@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 const prenotazione = (document.getElementById("prenota") as HTMLInputElement).value;
 console.log(prenotazione)
-let info = document.getElementById("data").value;
+let info = document.getElementById("data") as unknown as string;
 console.log(info)
 const nome = document.getElementById("nome") as HTMLInputElement;
 console.log(nome)
