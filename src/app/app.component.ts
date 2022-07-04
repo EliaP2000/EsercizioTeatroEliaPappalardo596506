@@ -24,11 +24,11 @@ export class AppComponent {
     console.log(this.bottoni)
     console.log(this.bottoni1)
     var length = this.bottoni.length;
-    prenotazione.addEventListener("click", prenotazione.selezionaPosto(), false);
+    prenotazione.addEventListener("click", prenotazione.selezionaPosto, false);
   };
 selezionaPosto(){
-    for(var i=0; i<length; i++){
-      if(this.bottoni[i] == addEventListener("click", true){
+    for(var i=0; i<this.bottoni.length; i++){
+      if(this.bottoni[i] == addEventListener("click", true)){
         this.bottoni[i].value = info;
         this.bottoni[i].style.color = "red";
         info="";
