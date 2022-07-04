@@ -28,11 +28,12 @@ export class AppComponent {
   };
 selezionaPosto(){
     for(var i=0; i<length; i++){
-      this.bottoni[i].addEventListener("click", this.bottoni[i].selezionaPosto, false);
+      if(this.bottoni[i] == addEventListener("click", true){
+        this.bottoni[i].value = info;
+        this.bottoni[i].style.color = "red";
+        info="";
+      }
     }
-    this.value = info;
-    this.style.color = "red";
-    info="";
   };
 toArray() { //funzione che trasforma l'array di bottoni in un array di stringhe
     return this.bottoni.map((fila) =>
