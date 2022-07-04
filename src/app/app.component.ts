@@ -47,6 +47,5 @@ function mostraTeatro() { //mostra l'array risultante
   console.log(palchiPrenotazione.toArray());
  }
 
-//chiamata e inserimento nelle variabili della funzione OrdinePrenotazione per prenotare i posti in platea e sui palchi
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
