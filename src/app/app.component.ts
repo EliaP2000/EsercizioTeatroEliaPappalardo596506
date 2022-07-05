@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-let prenotazione = document.getElementById("prenota") as HTMLButtonElement;
 let info = document.getElementById("data") as unknown as string;
+let prenotazione = document.getElementById("prenota") as HTMLButtonElement;
 const nome = document.getElementById("nome") as HTMLInputElement;
-const ClasseBottoni = document.getElementsByClassName("bottoni");
 let MostraTeatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
+const ClasseBottoni = document.getElementsByClassName("bottoni");
 
 @Component({
   selector: 'my-app',
