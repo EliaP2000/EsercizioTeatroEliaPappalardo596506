@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 let info = document.getElementById("data") as unknown as string;
 let prenotazione = document.getElementById("prenota") as HTMLButtonElement;
 const nome = document.getElementById("nome") as HTMLInputElement;
+let SpegniInserimento:HTMLElement = document.getElementsByClassName("divInserimento")[0] as HTMLElement;
 let MostraTeatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 const ClasseBottoni = document.getElementsByClassName("bottoni");
 
@@ -30,8 +31,7 @@ public selezionaPosto(){
     }
   };
 public showTeatro(){
-  console.log(MostraTeatro)
-  MostraTeatro.style.visibility= "visibile";
+  SpegniInserimento.style.visibility= "hidden";
   };
 }
 
