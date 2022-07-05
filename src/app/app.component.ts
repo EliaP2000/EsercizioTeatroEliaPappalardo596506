@@ -17,7 +17,6 @@ export class AppComponent {
   public style: CSSStyleDeclaration;
   bottoni = [];
   bottoni1 = [];
-  i: any;
   constructor(){
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
@@ -31,7 +30,7 @@ public selezionaPosto(){
       }
     }
   };
-public showTeatro(i){
+public showTeatro(i: number){
     if(i==1){
       Inserimento.style.visibility="hidden";
       Teatro.style.visibility="visibile";
@@ -46,9 +45,10 @@ public showTeatro(i){
 
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
+var contatore;
 
-plateaPrenotazione.showTeatro();
-palchiPrenotazione.showTeatro();
+plateaPrenotazione.showTeatro(contatore);
+palchiPrenotazione.showTeatro(contatore);
 
 plateaPrenotazione.selezionaPosto();
 palchiPrenotazione.selezionaPosto();
