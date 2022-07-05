@@ -35,6 +35,7 @@ public selezionaPosto(){
   };}
 public showTeatro(){
   Inserimento.style.visibility= "hidden";
+  Teatro.style.visibility="visibile";
   };
 }
 
