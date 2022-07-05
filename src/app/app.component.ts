@@ -36,6 +36,3 @@ public showTeatro(){
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
 
-function showTeatro() {
-throw new Error('Function not implemented.');
-}
