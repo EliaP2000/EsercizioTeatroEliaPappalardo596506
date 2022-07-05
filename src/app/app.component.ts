@@ -45,17 +45,17 @@ plateaPrenotazione.selezionaPosto();
 palchiPrenotazione.selezionaPosto();
 */
 
-document.getElementById('A').addEventListener('mouseover', function(){
-  changeColor(aColl, 'red');
+document.getElementById('Bottone A').addEventListener('click', function(){
+  changeVisibility(Inserimento, 'hidden');
 });
 
-document.getElementById('B').addEventListener('mouseover', function(){
-  changeColor(bColl, 'blue');
+document.getElementById('Bottone B').addEventListener('mouseover', function(){
+  changeVisibility(Teatro, 'visibile');
 });
-function changeColor(coll, color){
 
-for(var i=0, len=coll.length; i<len; i++)
-{
-  coll[i].style["background-color"] = color;
-}
+function changeVisibility(div, visibility){
+  for(var i=0, len=div.length; i<len; i++)
+  {
+    div[i].style["visibility"] = visibility;
+  }
 }
