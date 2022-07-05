@@ -37,6 +37,5 @@ var palchiPrenotazione = new AppComponent();
 
 
 function showTeatro() {
-  style: CSSStyleDeclaration;
   divTeatro.style.visibility= "visibile";
 }
