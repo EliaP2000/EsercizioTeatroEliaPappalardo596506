@@ -3,7 +3,7 @@ let prenotazione = document.getElementById("prenota") as HTMLButtonElement;
 let info = document.getElementById("data") as unknown as string;
 const nome = document.getElementById("nome") as HTMLInputElement;
 const ClasseBottoni = document.getElementsByClassName("bottoni");
-var divTeatro = document.getElementsByClassName("divTeatro") as HTMLCollectionOf<Element>;
+let divTeatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 
 @Component({
   selector: 'my-app',
