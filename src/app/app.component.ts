@@ -30,6 +30,7 @@ public selezionaPosto(){
     }
   };
 public showTeatro(){
+  console.log(MostraTeatro)
   MostraTeatro.style.visibility= "visibile";
   };
 }
