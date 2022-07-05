@@ -1,11 +1,16 @@
 <h1> Teatro </h1>
-<div id="divInserimento" style="visibility:visibile">
+
 <p>Scrivi il tuo nome, premi il pulsante prenota e clicca il posto che vuoi</p>
 <br>
-<input id='data' type='text'/><button id="prenota" onclick="showTeatro()">Prenota</button> 
+
+<div class="divInserimento">
+<input id='data' type='text'/><button onclick="document.getElementsByClassName('divInserimento').style.visibility='hidden'">Prenota</button> 
 <p id='nome'></p>
 </div>
+
 <div class="divTeatro" style="visibility:hidden">
+<button onclick="document.getElementsByClassName('divTeatro').style.visibility='visibile'">MostraTeatro</button> 
+
 <p>
 <button *ngFor='let platea of bottoni' onclick="selezionaPosto()">
   <p>{{platea}}</p>
