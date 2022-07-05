@@ -36,3 +36,4 @@ public showTeatro(){
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
 
+plateaPrenotazione.showTeatro();
