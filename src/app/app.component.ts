@@ -13,6 +13,9 @@ const ClasseBottoni = document.getElementsByClassName("bottoni");
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent {
+showTeatro() {
+throw new Error('Method not implemented.');
+}
   public value: any;
   public style: CSSStyleDeclaration;
   bottoni = [];
@@ -30,8 +33,8 @@ public selezionaPosto(){
       }
     }
   };}
-/*public showTeatro(){
-  SpegniInserimento.style.visibility= "hidden";
+public showTeatro(){
+  Inserimento.style.visibility= "hidden";
   };
 }
 
@@ -43,4 +46,4 @@ palchiPrenotazione.showTeatro();
 
 plateaPrenotazione.selezionaPosto();
 palchiPrenotazione.selezionaPosto();
-*/
+
