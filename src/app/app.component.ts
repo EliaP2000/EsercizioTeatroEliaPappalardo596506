@@ -45,11 +45,11 @@ plateaPrenotazione.selezionaPosto();
 palchiPrenotazione.selezionaPosto();
 */
 
-document.getElementById('Bottone A').addEventListener('click', function(){
+document.getElementById("BottoneA").addEventListener('click', function(){
   changeVisibility(Inserimento, 'hidden');
 });
 
-document.getElementById('Bottone B').addEventListener('mouseover', function(){
+document.getElementById("BottoneB").addEventListener('mouseover', function(){
   changeVisibility(Teatro, 'visibile');
 });
 

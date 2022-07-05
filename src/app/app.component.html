@@ -4,12 +4,12 @@
 <br>
 
 <div class="divInserimento">
-<input id='data' type='text'/><button id="Bottone A" onclick="document.getElementsByClassName('divInserimento').style.visibility='hidden'">Prenota</button> 
+<input id='data' type='text'/><button id="BottoneA" onclick="document.getElementsByClassName('divInserimento').style.visibility='hidden'">Prenota</button> 
 <p id='nome'></p>
 </div>
 
 <div class="divTeatro" style="visibility:hidden">
-<button id="Bottone B" onclick="document.getElementsByClassName('divTeatro').style.visibility='visibile'">MostraTeatro</button> 
+<button id="BottoneB" onclick="document.getElementsByClassName('divTeatro').style.visibility='visibile'">MostraTeatro</button> 
 
 <p>
 <button *ngFor='let platea of bottoni' onclick="selezionaPosto()">
