@@ -3,7 +3,7 @@
 <br>
 <input id='data' type='text'/><button id="prenota" onclick="showTeatro()">Prenota</button> 
 <p id='nome'></p>
-<div class="divTeatro" style="visibility:hidden">
+<div id="divTeatro" style="visibility:hidden">
 <p>
 <button *ngFor='let platea of bottoni' onclick="selezionaPosto()">
   <p>{{platea}}</p>
