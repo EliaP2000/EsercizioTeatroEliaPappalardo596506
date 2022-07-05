@@ -4,7 +4,6 @@ let Inserimento:HTMLElement = document.getElementsByClassName("divInserimento")[
 let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 let info = document.getElementById("data") as unknown as string;
 const nome = document.getElementById("nome") as HTMLInputElement;
-let MostraTeatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 const ClasseBottoni = document.getElementsByClassName("bottoni");
 
 @Component({
