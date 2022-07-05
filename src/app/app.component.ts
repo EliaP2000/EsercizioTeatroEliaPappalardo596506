@@ -47,4 +47,3 @@ palchiPrenotazione.showTeatro();
 
 plateaPrenotazione.selezionaPosto();
 palchiPrenotazione.selezionaPosto();
-
