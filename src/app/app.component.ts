@@ -37,3 +37,7 @@ var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
 
 plateaPrenotazione.showTeatro();
+palchiPrenotazione.showTeatro();
+
+plateaPrenotazione.selezionaPosto();
+palchiPrenotazione.selezionaPosto();
