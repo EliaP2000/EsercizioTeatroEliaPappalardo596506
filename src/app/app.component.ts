@@ -44,18 +44,3 @@ palchiPrenotazione.showTeatro();
 plateaPrenotazione.selezionaPosto();
 palchiPrenotazione.selezionaPosto();
 */
-
-document.getElementById("BottoneA").addEventListener('click', function(){
-  changeVisibility(Inserimento, 'hidden');
-});
-
-document.getElementById("BottoneB").addEventListener('mouseover', function(){
-  changeVisibility(Teatro, 'visibile');
-});
-
-function changeVisibility(div, visibility){
-  for(var i=0, len=div.length; i<len; i++)
-  {
-    div[i].style["visibility"] = visibility;
-  }
-}
