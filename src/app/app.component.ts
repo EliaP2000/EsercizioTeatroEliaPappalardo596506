@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 let info = document.getElementById("data") as unknown as string;
 let prenotazione = document.getElementById("prenota") as HTMLButtonElement;
 const nome = document.getElementById("nome") as HTMLInputElement;
