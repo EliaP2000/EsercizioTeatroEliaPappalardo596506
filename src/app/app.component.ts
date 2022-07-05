@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+window.onload(){
+  let Inserimento:HTMLElement = document.getElementsByClassName("divInserimento")[0] as HTMLElement;
+  let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
+  let info = document.getElementById("data") as unknown as string;
+  const nome = document.getElementById("nome") as HTMLInputElement;
+  const ClasseBottoni = document.getElementsByClassName("bottoni");
+}
 
-let Inserimento:HTMLElement = document.getElementsByClassName("divInserimento")[0] as HTMLElement
-let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
-let info = document.getElementById("data") as unknown as string;
-const nome = document.getElementById("nome") as HTMLInputElement;
-const ClasseBottoni = document.getElementsByClassName("bottoni");
 
 @Component({
   selector: 'my-app',
