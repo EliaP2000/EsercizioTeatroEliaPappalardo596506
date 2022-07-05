@@ -45,7 +45,7 @@ public showTeatro(i: number){
 
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
-var contatore;
+var contatore: number;
 
 plateaPrenotazione.showTeatro(contatore);
 palchiPrenotazione.showTeatro(contatore);
