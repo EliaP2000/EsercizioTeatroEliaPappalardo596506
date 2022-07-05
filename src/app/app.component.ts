@@ -4,7 +4,7 @@ let info = document.getElementById("data") as unknown as string;
 const nome = document.getElementById("nome") as HTMLInputElement;
 const ClasseBottoni = document.getElementsByClassName("bottoni");
 const divTeatro = document.getElementsByClassName("divTeatro") as unknown as HTMLElement;
-showTeatro();
+
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
