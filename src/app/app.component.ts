@@ -3,7 +3,7 @@ let prenotazione = document.getElementById("prenota") as HTMLButtonElement;
 let info = document.getElementById("data") as unknown as string;
 const nome = document.getElementById("nome") as HTMLInputElement;
 const ClasseBottoni = document.getElementsByClassName("bottoni");
-const divTeatro = document.getElementsByClassName("divTeatro") as HTMLCollectionOf<HTMLElement>;
+const divTeatro = document.getElementsByClassName("divTeatro");
 showTeatro();
 
 
@@ -30,12 +30,10 @@ public selezionaPosto(){
       }
     }
   };
+public showTeatro(){
+    divTeatro.style.visibility= "visibile";
+  };
 }
 
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
-
-
-function showTeatro() {
-  divTeatro.style.visibility= "visibile";
-}
