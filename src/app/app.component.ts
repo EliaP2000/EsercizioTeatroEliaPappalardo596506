@@ -3,7 +3,7 @@ let prenotazione = document.getElementById("prenota") as HTMLButtonElement;
 let info = document.getElementById("data") as unknown as string;
 const nome = document.getElementById("nome") as HTMLInputElement;
 const ClasseBottoni = document.getElementsByClassName("bottoni");
-let divTeatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
+let MostraTeatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 
 @Component({
   selector: 'my-app',
@@ -29,7 +29,7 @@ public selezionaPosto(){
     }
   };
 public showTeatro(){
-    divTeatro.style.visibility= "visibile";
+  MostraTeatro.style.visibility= "visibile";
   };
 }
 
