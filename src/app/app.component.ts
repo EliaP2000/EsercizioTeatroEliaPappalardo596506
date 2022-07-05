@@ -13,9 +13,6 @@ const ClasseBottoni = document.getElementsByClassName("bottoni");
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent {
-showTeatro() {
-throw new Error('Method not implemented.');
-}
   public value: any;
   public style: CSSStyleDeclaration;
   bottoni = [];
@@ -32,7 +29,7 @@ public selezionaPosto(){
         info="";
       }
     }
-  };}
+  };
 public showTeatro(){
   Inserimento.style.visibility= "hidden";
   Teatro.style.visibility="visibile";
