@@ -13,8 +13,8 @@ showTeatro();
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent {
-  private value: any;
-  private style: CSSStyleDeclaration;
+  public value: any;
+  public style: CSSStyleDeclaration;
   bottoni = [];
   bottoni1 = [];
   constructor(){
