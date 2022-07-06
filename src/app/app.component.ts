@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 
-let Inserimento:HTMLElement = document.getElementsByClassName("divInserimento")[0] as HTMLElement;
 let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 let info = document.getElementById("data") as unknown as string;
 const nome = document.getElementById("nome") as HTMLInputElement;
@@ -32,6 +31,7 @@ public selezionaPosto(){
   };
 public showTeatro(i: number){
     if(i==1){
+      let Inserimento = (document.getElementsByClassName("divInserimento")[0] as HTMLElement).value;
       Inserimento.style.visibility="hidden";
       Teatro.style.visibility="visibile";
     }
