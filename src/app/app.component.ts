@@ -29,18 +29,19 @@ public selezionaPosto(){
     }
   };
 public showTeatro(i: number){
+  var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>)
     if(i==1){
-      var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>)
       for(var j=0; j<w.length; j++){
         w[j].style.visibility='hidden';
         Teatro.style.visibility="visibile";
       }
     }
     else{
-      document.getElementsByClassName("divInserimento")[0].style.visibility="visible";
-      Teatro.style.visibility="hidden";
+      for(var j=0; j<w.length; j++){
+        w[j].style.visibility='visible';
+        Teatro.style.visibility="hidden";
+      }
     }
-
   };
 }
 
