@@ -16,11 +16,12 @@ export class AppComponent {
   bottoni = [];
   bottoni1 = [];
   constructor(){
-    this.bottoni = Array(71).fill(0).map((x,i)=>i);
-    this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
+    this.bottoni = Array(70).fill(0).map((x,i)=>i+1);
+    this.bottoni1 = Array(24).fill(0).map((x,i)=>i+1);
   };
 public selezionaPostoPlatea(platea: string|number){
         this.bottoni[platea] = info;
+        console.log(this.bottoni)
         this.bottoni[platea].style.color = "red";
         info="";
   };
