@@ -19,10 +19,10 @@ export class AppComponent {
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
   };
-public selezionaPostoPlatea(platea){
+public selezionaPostoPlatea(platea: string|number){
         this.bottoni[platea] = info;
         console.log(this.bottoni)
-        this.bottoni[i].style.color = "red";
+        this.bottoni[platea].style.color = "red";
         info="";
       }
     }
@@ -53,7 +53,7 @@ public showTeatro(i: number){
   };
 }
 
-var plateaPrenotazione: AppComponent = new AppComponent();
+var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
 var contatore: number;
 var platea: any
