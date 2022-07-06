@@ -20,15 +20,15 @@ export class AppComponent {
     this.bottoni1 = Array(24).fill(0).map((x,i)=>i+1);
   };
 public selezionaPostoPlatea(platea: string|number){
-        this.bottoni[platea] = info;
-        console.log(this.bottoni)
-        this.bottoni[platea].style.color = "red";
-        info="";
+      this.bottoni[platea] = info;
+      console.log(this.bottoni)
+      this.bottoni[platea].style.color = "red";
+      info="";
   };
 public selezionaPostoPalchi(palchi: string|number){
-        this.bottoni1[palchi] = info;
-        this.bottoni1[palchi].style.color = "red";
-        info="";
+      this.bottoni1[palchi] = info;
+      this.bottoni1[palchi].style.color = "red";
+      info="";
   };
 public showTeatro(i: number){
   var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>)
