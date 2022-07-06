@@ -17,12 +17,13 @@ export class AppComponent {
   bottoni1 = [];
   constructor(){
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
+    console.log(this.bottoni)
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
   };
 public selezionaPostoPlatea(){
     for(var i=0; i<this.bottoni.length; i++){
       if(this.bottoni[i]){
-        this.bottoni[i].value = info;
+        this.bottoni[i].map((x,j) => info);
         this.bottoni[i].style.color = "red";
         info="";
       }
