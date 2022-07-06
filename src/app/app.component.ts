@@ -13,7 +13,7 @@ const ClasseBottoni = document.getElementsByClassName("bottoni");
 })
 export class AppComponent {
   public value: any;
-  public style: any;
+  public style: CSSStyleDeclaration;
   bottoni = [];
   bottoni1 = [];
   constructor(){
@@ -30,7 +30,7 @@ public selezionaPosto(){
     }
   };
 public showTeatro(i: number){
-  let Inserimento = (document.getElementsByClassName("divInserimento")[0] as HTMLElement).style;
+  let Inserimento = (document.getElementsByClassName("divInserimento")[0] as HTMLElement).style.visibility;
     if(i==1){
       Inserimento.style.visibility="hidden";
       Teatro.style.visibility="visibile";
