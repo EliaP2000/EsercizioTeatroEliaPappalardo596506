@@ -29,13 +29,12 @@ public selezionaPosto(){
     }
   };
 public showTeatro(i: number){
-  var Inserimento = (document.getElementsByClassName("divInserimento")[0] as HTMLElement);
     if(i==1){
-      Inserimento.style.visibility="hidden";
+      document.getElementsByClassName("divInserimento")[0].style.visibility='hidden';
       Teatro.style.visibility="visibile";
     }
     else{
-      Inserimento.style.visibility="visible";
+      document.getElementsByClassName("divInserimento")[0].style.visibility="visible";
       Teatro.style.visibility="hidden";
     }
 
