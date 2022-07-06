@@ -19,7 +19,7 @@ export class AppComponent {
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
   };
-public selezionaPosto(){
+public selezionaPostoPlatea(){
     for(var i=0; i<this.bottoni.length; i++){
       if(this.bottoni[i]){
         this.bottoni[i].value = info;
@@ -28,6 +28,15 @@ public selezionaPosto(){
       }
     }
   };
+public selezionaPostoPalchi(){
+  for(var i=0; i<this.bottoni1.length; i++){
+    if(this.bottoni1[i]){
+      this.bottoni1[i].value = info;
+      this.bottoni1[i].style.color = "red";
+      info="";
+    }
+  }
+};
 public showTeatro(i: number){
   var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>)
     if(i==1){
@@ -49,5 +58,5 @@ var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
 var contatore: number;
 
-plateaPrenotazione.selezionaPosto();
-palchiPrenotazione.selezionaPosto();
+plateaPrenotazione.selezionaPostoPlatea();
+palchiPrenotazione.selezionaPostoPalchi();

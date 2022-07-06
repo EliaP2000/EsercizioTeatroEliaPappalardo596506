@@ -12,12 +12,12 @@
 <button id="BottoneB" onclick="document.getElementsByClassName('divTeatro').style.visibility='visibile'">MostraTeatro</button> 
 
 <p>
-<button *ngFor='let platea of bottoni' onclick="selezionaPosto()">
+<button *ngFor='let platea of bottoni' onclick="selezionaPostoPlatea()">
   <p>{{platea}}</p>
 </button>
 </p>
 <p>
-<button *ngFor='let palchi of bottoni1' class='bottoni'>
+<button *ngFor='let palchi of bottoni1' onclick="selezionaPostoPalchi()" class='bottoni'>
   <p>{{palchi}}</p>
 </button>
 </p>
