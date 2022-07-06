@@ -30,8 +30,11 @@ public selezionaPosto(){
   };
 public showTeatro(i: number){
     if(i==1){
-      document.getElementsByClassName("divInserimento")[0].style.visibility='hidden';
-      Teatro.style.visibility="visibile";
+      var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>)
+      for(var j=0; j<w.length; j++){
+        w[j].style.visibility='hidden';
+        Teatro.style.visibility="visibile";
+      }
     }
     else{
       document.getElementsByClassName("divInserimento")[0].style.visibility="visible";
