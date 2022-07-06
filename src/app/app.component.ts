@@ -26,8 +26,8 @@ public selezionaPostoPlatea(platea: string|number){
         info="";
   };
 public selezionaPostoPalchi(palchi: string|number){
-        this.bottoni[palchi] = info;
-        this.bottoni[palchi].style.color = "red";
+        this.bottoni1[palchi] = info;
+        this.bottoni1[palchi].style.color = "red";
         info="";
   };
 public showTeatro(i: number){
