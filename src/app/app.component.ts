@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 let info = document.getElementById("data") as unknown as string;
+let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 const nome = document.getElementById("nome") as HTMLInputElement;
 const ClasseBottoni = document.getElementsByClassName("bottoni");
 
