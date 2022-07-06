@@ -31,7 +31,7 @@ public selezionaPosto(){
   };
 public showTeatro(i: number){
     if(i==1){
-      let Inserimento = (document.getElementsByClassName("divInserimento")).value;
+      let Inserimento = document.getElementsByClassName("divInserimento")[0] as HTMLElement;
       Inserimento.style.visibility="hidden";
       Teatro.style.visibility="visibile";
     }
