@@ -30,7 +30,7 @@ public selezionaPosto(){
     }
   };
 public showTeatro(i: number){
-  let Inserimento = (document.getElementsByClassName("divInserimento")[0] as HTMLElement).style.visibility;
+  let Inserimento = (document.getElementsByClassName("divInserimento")[0] as HTMLElement);
     if(i==1){
       Inserimento.style.visibility="hidden";
       Teatro.style.visibility="visibile";
@@ -52,5 +52,3 @@ palchiPrenotazione.showTeatro(contatore);
 
 plateaPrenotazione.selezionaPosto();
 palchiPrenotazione.selezionaPosto();
-
-style: any;
