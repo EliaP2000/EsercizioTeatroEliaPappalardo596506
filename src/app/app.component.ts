@@ -19,7 +19,7 @@ export class AppComponent {
     this.bottoni = Array(71).fill(0).map((x,i)=>i);
     this.bottoni1 = Array(25).fill(0).map((x,i)=>i);
   };
-public selezionaPostoPlatea(platea: string|number){
+public selezionaPostoPlatea(platea){
         this.bottoni[platea] = info;
         this.bottoni[platea].style.color = "red";
         info="";
