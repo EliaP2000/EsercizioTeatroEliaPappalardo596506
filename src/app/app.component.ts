@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-let info = document.getElementById("data") as unknown as string;
+let info = document.getElementById("data") as string|HTMLInputElement;
 console.log(info)
 let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 const nome = document.getElementById("nome") as HTMLInputElement;
