@@ -25,7 +25,7 @@ public selezionaPostoPlatea(info: string, platea: any){
   for(var j=0; j<this.bottoni.length; j++){
       if(platea==j)
       this.bottoni[j] = info;
-      this.bottoni[j].style.backgroundColor = "red";
+      this.bottoni[j].style="background-color:red";
       info="";
     }
   };
