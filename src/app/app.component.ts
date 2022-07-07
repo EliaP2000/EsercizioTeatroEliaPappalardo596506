@@ -28,7 +28,6 @@ public selezionaPostoPlatea(info: string, platea: any){
       //this.bottoni[j].style.backgroundColor = "red";
       info="";
     }
-    console.log(this.bottoni)
   };
 public selezionaPostoPalchi(palchi: string|number){
       /*this.bottoni1[palchi] = info;
