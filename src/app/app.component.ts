@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 /*let info = document.getElementById("data") as string|HTMLInputElement;
 console.log(info)*/
