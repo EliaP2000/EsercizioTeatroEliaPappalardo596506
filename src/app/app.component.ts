@@ -34,7 +34,7 @@ public selezionaPostoPalchi(palchi: string|number){
       this.bottoni1[palchi].style.color = "red";
       info="";*/
   };
-/*public showTeatro(i: number){
+public showTeatro(i: number){
   var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>);
     if(i==1){
       for(var j=0; j<w.length; j++){
@@ -48,7 +48,7 @@ public selezionaPostoPalchi(palchi: string|number){
         Teatro.style.visibility="hidden";
       }
     }
-  };*/
+  };
 }
 
 var plateaPrenotazione = new AppComponent();
