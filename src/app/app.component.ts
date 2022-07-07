@@ -35,7 +35,6 @@ public selezionaPostoPalchi(palchi: string|number){
   };
 public showTeatro(i: number){
   var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>);
-  console.log(w)
     if(i==1){
       for(var j=0; j<w.length; j++){
         w[j].style.visibility='hidden';
@@ -63,5 +62,3 @@ palchiPrenotazione.selezionaPostoPalchi(palchi);
 
 plateaPrenotazione.showTeatro(i);
 palchiPrenotazione.showTeatro(i);
-
-
