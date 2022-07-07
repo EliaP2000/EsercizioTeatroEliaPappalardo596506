@@ -22,7 +22,6 @@ export class AppComponent {
   };
 public selezionaPostoPlatea(info: string, platea: number){
       this.bottoni[platea] = info;
-      console.log(this.bottoni)
       this.bottoni[platea].style.color = "red";
       info="";
   };
