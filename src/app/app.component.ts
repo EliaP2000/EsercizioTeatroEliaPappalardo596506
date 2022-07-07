@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-let info = document.getElementById("data") as string|HTMLInputElement;
-console.log(info)
+/*let info = document.getElementById("data") as string|HTMLInputElement;
+console.log(info)*/
 let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 const nome = document.getElementById("nome") as HTMLInputElement;
 const ClasseBottoni = document.getElementsByClassName("bottoni");
@@ -20,7 +20,7 @@ export class AppComponent {
     this.bottoni = Array(70).fill(0).map((x,i)=>i+1);
     this.bottoni1 = Array(24).fill(0).map((x,i)=>i+1);
   };
-public selezionaPostoPlatea(platea: string|number){
+public selezionaPostoPlatea(info: string, platea: number){
       this.bottoni[platea] = info;
       console.log(this.bottoni)
       this.bottoni[platea].style.color = "red";
@@ -50,8 +50,9 @@ public showTeatro(i: number){
 
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
-var platea: string|number;
+var platea: number;
 var palchi: string|number;
+var info: string;
 
-plateaPrenotazione.selezionaPostoPlatea(platea);
+plateaPrenotazione.selezionaPostoPlatea(info, platea);
 palchiPrenotazione.selezionaPostoPalchi(palchi);
