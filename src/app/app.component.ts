@@ -22,17 +22,17 @@ export class AppComponent {
     this.bottoni1 = Array(24).fill(0).map((x,i)=>i+1);
   };
 public selezionaPostoPlatea(info: string, platea: HTMLElement){
-  /*for(var j=0; j<this.bottoni.length; j++){
+  for(var j=0; j<this.bottoni.length; j++){
       if(platea==this.bottoni[i])
       this.bottoni[j] = info;
       platea.style.backgroundColor = "red";
       info="";
-    }*/
+    }
   };
 public selezionaPostoPalchi(palchi: string|number){
-      /*this.bottoni1[palchi] = info;
+      this.bottoni1[palchi] = info;
       this.bottoni1[palchi].style.color = "red";
-      info="";*/
+      info="";
   };
 public showTeatro(i: number){
   var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>);
