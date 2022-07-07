@@ -21,9 +21,9 @@ export class AppComponent {
     this.bottoni1 = Array(24).fill(0).map((x,i)=>i+1);
   };
 public selezionaPostoPlatea(info: string, platea: HTMLElement){
-  for(var i=0; i<this.bottoni.length; i++){
+  for(var j=0; j<this.bottoni.length; j++){
       if(platea==this.bottoni[i])
-      this.bottoni[i] = info;
+      this.bottoni[j] = info;
       platea.style.backgroundColor = "red";
       info="";
     }
@@ -34,7 +34,7 @@ public selezionaPostoPalchi(palchi: string|number){
       info="";
   };
 public showTeatro(i: number){
-  var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>)
+  var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>);
     if(i==1){
       for(var j=0; j<w.length; j++){
         w[j].style.visibility='hidden';
@@ -55,6 +55,12 @@ var palchiPrenotazione = new AppComponent();
 var platea: HTMLElement;
 var palchi: string|number;
 var info: string;
+var i: number;
 
 plateaPrenotazione.selezionaPostoPlatea(info, platea);
 palchiPrenotazione.selezionaPostoPalchi(palchi);
+
+plateaPrenotazione.showTeatro(i);
+palchiPrenotazione.showTeatro(i);
+
+
