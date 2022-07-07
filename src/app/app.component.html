@@ -11,8 +11,8 @@
 <button id="BottoneB" onclick="document.getElementsByClassName('divTeatro').style.visibility='visibile'">MostraTeatro</button> 
 
 <p>
-<button *ngFor='let platea of bottoni; let counter=index' onclick="selezionaPostoPlatea(getElementById('data'), index)">
-  <p >{{platea}}</p>
+<button *ngFor='let platea of bottoni; let counter=index' >
+  <p onclick="selezionaPostoPlatea(getElementById('data'), index)">{{platea}}</p>
 </button>
 </p>
 <p>
