@@ -61,5 +61,5 @@ var i: number;
 plateaPrenotazione.selezionaPostoPlatea(info, platea);
 palchiPrenotazione.selezionaPostoPalchi(palchi);
 
-/*plateaPrenotazione.showTeatro(i);
-palchiPrenotazione.showTeatro(i);*/
+plateaPrenotazione.showTeatro(i);
+palchiPrenotazione.showTeatro(i);
