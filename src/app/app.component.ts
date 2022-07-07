@@ -38,14 +38,14 @@ public selezionaPostoPalchi(palchi: string|number){
   var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>);
     if(i==1){
       for(var j=0; j<w.length; j++){
-        w[j].style.display ='none';
-        Teatro.style.display="block";
+        w[j].style.visibility='hidden';
+        Teatro.style.visibility="visibile";
       }
     }
     else{
       for(var j=0; j<w.length; j++){
-        w[j].style.display='none';
-        Teatro.style.display="block";
+        w[j].style.visibility='visible';
+        Teatro.style.visibility="hidden";
       }
     }
   };*/
