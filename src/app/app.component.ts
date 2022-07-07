@@ -21,9 +21,12 @@ export class AppComponent {
     this.bottoni1 = Array(24).fill(0).map((x,i)=>i+1);
   };
 public selezionaPostoPlatea(info: string, platea: number){
-      this.bottoni[platea] = info;
-      this.bottoni[platea].style.color = "red";
-      info="";
+  for(var i=0; i<this.bottoni.length; i++){
+      if(platea==this.bottoni[i])
+      this.bottoni[i] = info;
+      this.bottoni[i].style.color = "red";
+        info="";
+    }
   };
 public selezionaPostoPalchi(palchi: string|number){
       this.bottoni1[palchi] = info;
