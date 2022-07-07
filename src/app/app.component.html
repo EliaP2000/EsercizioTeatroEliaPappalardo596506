@@ -7,11 +7,11 @@
 <input id="data" type="text"/><button id="bottonePrenota" onclick="showTeatro(1)">Prenota</button> 
 </div>
 
-<div class="divTeatro" style="visibility:hidden">
+<div class="divTeatro" style="visibility:visibile">
 <button id="BottoneB" onclick="document.getElementsByClassName('divTeatro').style.visibility='visibile'">MostraTeatro</button> 
 
 <p>
-<button *ngFor='let platea of bottoni' onclick="selezionaPostoPlatea(getElementById('data'), platea)">
+<button *ngFor='let platea of bottoni; let counter=index' onclick="selezionaPostoPlatea(getElementById('data'), index)">
   <p >{{platea}}</p>
 </button>
 </p>
