@@ -20,11 +20,11 @@ export class AppComponent {
     this.bottoni = Array(70).fill(0).map((x,i)=>i+1);
     this.bottoni1 = Array(24).fill(0).map((x,i)=>i+1);
   };
-public selezionaPostoPlatea(info: string, platea: number){
+public selezionaPostoPlatea(info: string, platea: HTMLElement){
   for(var i=0; i<this.bottoni.length; i++){
       if(platea==this.bottoni[i])
       this.bottoni[i] = info;
-      this.bottoni[i].style.color = "red";
+      platea.style.color = "red";
         info="";
     }
   };
@@ -52,7 +52,7 @@ public showTeatro(i: number){
 
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
-var platea: number;
+var platea: HTMLElement;
 var palchi: string|number;
 var info: string;
 
