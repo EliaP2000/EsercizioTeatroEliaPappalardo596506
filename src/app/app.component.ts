@@ -66,4 +66,4 @@ function showTeatro(nomeInserito: any){
 
 plateaPrenotazione.selezionaPostoPlatea(info, Numplatea);
 palchiPrenotazione.selezionaPostoPalchi(info, Numpalchi);
-document.addEventListener("click", showTeatro);
+document.getElementById("data").addEventListener("click", showTeatro);
