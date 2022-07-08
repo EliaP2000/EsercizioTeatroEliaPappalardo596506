@@ -22,19 +22,21 @@ export class AppComponent {
   };
 public selezionaPostoPlatea(info: string, Numplatea: any){
   for(var j=0; j<this.bottoni.length; j++){
-      if(Numplatea==j)
-      this.bottoni[j] = info;
+      if(Numplatea==j){
+        this.bottoni[j] = info;
       //this.bottoni[j].style.backgroundColor = "red";
-      info="";
+        info="";
+      }
     }
   };
 public selezionaPostoPalchi(info: string, Numpalchi: any){
   for(var j=0; j<this.bottoni1.length; j++){
-    if(Numpalchi==j)
-    this.bottoni1[j] = info;
-    //this.bottoni1[j].style.backgroundColor = "red";
-    info="";
-  }
+    if(Numpalchi==j){
+      this.bottoni1[j] = info;
+      //this.bottoni1[j].style.backgroundColor = "red";
+      info="";
+      }
+    }
   };
 }
 
@@ -52,7 +54,7 @@ showTeatro(nomeInserito){
         Teatro.style.visibility="hidden";
       }
     }
-  }
+}
 
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
