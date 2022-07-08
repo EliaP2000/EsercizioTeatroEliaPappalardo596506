@@ -37,9 +37,7 @@ public selezionaPostoPalchi(info: string, Numpalchi: any){
       }
     }
   };
-}
-
-function showTeatro(nomeInserito: any){
+showTeatro(nomeInserito: any){
   var w = Array.from(document.getElementsByClassName("divInserimento") as unknown as HTMLCollectionOf<HTMLElement>);
     if(nomeInserito != null){
       for(var j=0; j<w.length; j++){
@@ -53,6 +51,7 @@ function showTeatro(nomeInserito: any){
         Teatro.style.visibility="hidden";
       }
     }
+};
 }
 
 var plateaPrenotazione = new AppComponent();
