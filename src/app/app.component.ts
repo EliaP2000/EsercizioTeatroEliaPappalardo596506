@@ -37,7 +37,16 @@ public selezionaPostoPalchi(info: string, Numpalchi: any){
       }
     }
   };
-showTeatro(nomeInserito: any){
+}
+
+var plateaPrenotazione = new AppComponent();
+var palchiPrenotazione = new AppComponent();
+var Numplatea: any;
+var Numpalchi: any;
+var info: string;
+//var nomeInserito: any;
+
+function showTeatro(nomeInserito: any){
   var w = Array.from(document.getElementsByClassName("divInserimento") as unknown as HTMLCollectionOf<HTMLElement>);
     if(nomeInserito != null){
       for(var j=0; j<w.length; j++){
@@ -51,15 +60,7 @@ showTeatro(nomeInserito: any){
         Teatro.style.visibility="hidden";
       }
     }
-};
 }
-
-var plateaPrenotazione = new AppComponent();
-var palchiPrenotazione = new AppComponent();
-var Numplatea: any;
-var Numpalchi: any;
-var info: string;
-//var nomeInserito: any;
 
 plateaPrenotazione.selezionaPostoPlatea(info, Numplatea);
 palchiPrenotazione.selezionaPostoPalchi(info, Numpalchi);
