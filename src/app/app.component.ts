@@ -47,17 +47,19 @@ var info: string;
 
 function showTeatro(nomeInserito: any){
   var BloccoInserimento = Array.from(document.getElementsByClassName("divInserimento") as unknown as HTMLCollectionOf<HTMLElement>);
-  var BloccoInserimento = Array.from(document.getElementsByClassName("divTeatro") as unknown as HTMLCollectionOf<HTMLElement>);
+  var BloccoTeatro = Array.from(document.getElementsByClassName("divTeatro") as unknown as HTMLCollectionOf<HTMLElement>);
     if(nomeInserito != null){
       for(var j=0; j<BloccoInserimento.length; j++){
         BloccoInserimento[j].style.visibility='hidden';
-        BloccoInserimento[j].style.visibility="visibile";
+        BloccoTeatro[j].style.visibility="visibile";
+        return BloccoInserimento||BloccoTeatro; 
       }
     }
     else{
       for(var j=0; j<BloccoInserimento.length; j++){
         BloccoInserimento[j].style.visibility='visible';
-        BloccoInserimento[j].style.visibility="hidden";
+        BloccoTeatro[j].style.visibility="hidden";
+        return BloccoInserimento||BloccoTeatro; 
       }
     }
 }
