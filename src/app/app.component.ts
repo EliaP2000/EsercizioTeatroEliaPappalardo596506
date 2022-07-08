@@ -59,7 +59,7 @@ var palchiPrenotazione = new AppComponent();
 var Numplatea: any;
 var Numpalchi: any;
 var info: string;
-var nomeInserito: any;
+//var nomeInserito: any;
 
 plateaPrenotazione.selezionaPostoPlatea(info, Numplatea);
 palchiPrenotazione.selezionaPostoPalchi(info, Numpalchi);
