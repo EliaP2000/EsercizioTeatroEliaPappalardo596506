@@ -36,7 +36,7 @@ public selezionaPostoPalchi(palchi: string|number){
       this.bottoni1[palchi].style.color = "red";
       info="";*/
   };
-public showTeatro(valore: any){
+public showTeatro(nomeInserito: any){
   var w = Array.from(document.getElementsByClassName("divInserimento") as unknown as HTMLCollectionOf<HTMLElement>);
     if(valore != null){
       for(var j=0; j<w.length; j++){
@@ -58,10 +58,10 @@ var palchiPrenotazione = new AppComponent();
 var platea: any;
 var palchi: string|number;
 var info: string;
-var valore: any;
+var nomeInserito: any;
 
 plateaPrenotazione.selezionaPostoPlatea(info, platea);
 palchiPrenotazione.selezionaPostoPalchi(palchi);
 
-plateaPrenotazione.showTeatro(valore);
-palchiPrenotazione.showTeatro(valore);
+plateaPrenotazione.showTeatro(nomeInserito);
+palchiPrenotazione.showTeatro(nomeInserito);
