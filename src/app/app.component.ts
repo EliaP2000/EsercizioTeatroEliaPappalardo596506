@@ -40,7 +40,7 @@ public selezionaPostoPalchi(info: string, Numpalchi: any){
   };
 }
 
-showTeatro(nomeInserito);{
+function showTeatro(nomeInserito){
   var w = Array.from(document.getElementsByClassName("divInserimento") as unknown as HTMLCollectionOf<HTMLElement>);
     if(nomeInserito != null){
       for(var j=0; j<w.length; j++){
