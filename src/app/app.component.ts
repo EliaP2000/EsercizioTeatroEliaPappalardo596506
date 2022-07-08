@@ -3,7 +3,6 @@ import { DOCUMENT } from '@angular/common';
 
 /*let info = document.getElementById("data") as string|HTMLInputElement;
 console.log(info)*/
-let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 
 @Component({
   selector: 'my-app',
@@ -48,6 +47,7 @@ var info: string;
 
 function showTeatro(nomeInserito: any){
   var w = Array.from(document.getElementsByClassName("divInserimento") as unknown as HTMLCollectionOf<HTMLElement>);
+  var Teatro = Array.from(document.getElementsByClassName("divTeatro") as unknown as HTMLCollectionOf<HTMLElement>);
     if(nomeInserito != null){
       for(var j=0; j<w.length; j++){
         w[j].style.visibility='hidden';
