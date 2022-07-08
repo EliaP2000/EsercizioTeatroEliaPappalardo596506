@@ -7,6 +7,8 @@ let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTML
 const nome = document.getElementById("nome") as HTMLInputElement;
 const ClasseBottoni = document.getElementsByClassName("bottoni");
 
+let items: any;
+
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -35,7 +37,7 @@ public selezionaPostoPalchi(palchi: string|number){
       info="";*/
   };
 public showTeatro(i: number){
-  var w = Array.from(document.getElementsByClassName("divInserimento")[0] as unknown as HTMLCollectionOf<HTMLElement>);
+  var w = Array.from(document.getElementsByClassName("divInserimento") as unknown as HTMLCollectionOf<HTMLElement>);
     if(i==1){
       for(var j=0; j<w.length; j++){
         w[j].style.visibility='hidden';
