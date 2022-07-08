@@ -5,6 +5,7 @@ import { DOCUMENT } from '@angular/common';
 console.log(info)*/
 let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 
+function showTeatro(nomeInserito);
 
 @Component({
   selector: 'my-app',
