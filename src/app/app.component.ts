@@ -5,8 +5,6 @@ import { DOCUMENT } from '@angular/common';
 console.log(info)*/
 let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
 
-let items: any;
-
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -58,8 +56,9 @@ var palchi: string|number;
 var info: string;
 var nomeInserito: any;
 
+plateaPrenotazione.showTeatro(nomeInserito);
+palchiPrenotazione.showTeatro(nomeInserito);
+
 plateaPrenotazione.selezionaPostoPlatea(info, platea);
 palchiPrenotazione.selezionaPostoPalchi(palchi);
 
-plateaPrenotazione.showTeatro(nomeInserito);
-palchiPrenotazione.showTeatro(nomeInserito);
