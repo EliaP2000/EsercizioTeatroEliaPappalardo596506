@@ -60,8 +60,7 @@ var Numpalchi: any;
 var info: string;
 var nomeInserito: any;
 
-plateaPrenotazione.showTeatro(nomeInserito);
-palchiPrenotazione.showTeatro(nomeInserito);
+showTeatro(nomeInserito);
 
 plateaPrenotazione.selezionaPostoPlatea(info, Numplatea);
 palchiPrenotazione.selezionaPostoPalchi(info, Numpalchi);
