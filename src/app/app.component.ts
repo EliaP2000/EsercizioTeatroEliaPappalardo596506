@@ -4,8 +4,6 @@ import { DOCUMENT } from '@angular/common';
 /*let info = document.getElementById("data") as string|HTMLInputElement;
 console.log(info)*/
 let Teatro:HTMLElement = document.getElementsByClassName("divTeatro")[0] as HTMLElement;
-const nome = document.getElementById("nome") as HTMLInputElement;
-const ClasseBottoni = document.getElementsByClassName("bottoni");
 
 let items: any;
 
@@ -38,7 +36,7 @@ public selezionaPostoPalchi(palchi: string|number){
   };
 public showTeatro(nomeInserito: any){
   var w = Array.from(document.getElementsByClassName("divInserimento") as unknown as HTMLCollectionOf<HTMLElement>);
-    if(valore != null){
+    if(nomeInserito != null){
       for(var j=0; j<w.length; j++){
         w[j].style.visibility='hidden';
         Teatro.style.visibility="visibile";
