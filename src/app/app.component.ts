@@ -19,18 +19,21 @@ export class AppComponent {
     this.bottoni = Array(70).fill(0).map((x,i)=>i+1);
     this.bottoni1 = Array(24).fill(0).map((x,i)=>i+1);
   };
-public selezionaPostoPlatea(info: string, platea: any){
+public selezionaPostoPlatea(info: string, Numplatea: any){
   for(var j=0; j<this.bottoni.length; j++){
-      if(platea==j)
+      if(Numplatea==j)
       this.bottoni[j] = info;
       //this.bottoni[j].style.backgroundColor = "red";
       info="";
     }
   };
-public selezionaPostoPalchi(palchi: string|number){
-      /*this.bottoni1[palchi] = info;
-      this.bottoni1[palchi].style.color = "red";
-      info="";*/
+public selezionaPostoPalchi(info: string, Numpalchi: any){
+  for(var j=0; j<this.bottoni1.length; j++){
+    if(Numpalchi==j)
+    this.bottoni1[j] = info;
+    //this.bottoni1[j].style.backgroundColor = "red";
+    info="";
+  }
   };
 public showTeatro(nomeInserito: any){
   var w = Array.from(document.getElementsByClassName("divInserimento") as unknown as HTMLCollectionOf<HTMLElement>);
@@ -51,14 +54,14 @@ public showTeatro(nomeInserito: any){
 
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
-var platea: any;
-var palchi: string|number;
+var Numplatea: any;
+var Numpalchi: any;
 var info: string;
 var nomeInserito: any;
 
 plateaPrenotazione.showTeatro(nomeInserito);
 palchiPrenotazione.showTeatro(nomeInserito);
 
-plateaPrenotazione.selezionaPostoPlatea(info, platea);
-palchiPrenotazione.selezionaPostoPalchi(palchi);
+plateaPrenotazione.selezionaPostoPlatea(info, Numplatea);
+palchiPrenotazione.selezionaPostoPalchi(info, Numpalchi);
 
