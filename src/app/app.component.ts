@@ -36,9 +36,9 @@ public selezionaPostoPalchi(palchi: string|number){
       this.bottoni1[palchi].style.color = "red";
       info="";*/
   };
-public showTeatro(i: number){
+public showTeatro(valore: any){
   var w = Array.from(document.getElementsByClassName("divInserimento") as unknown as HTMLCollectionOf<HTMLElement>);
-    if(i==1){
+    if(valore != null){
       for(var j=0; j<w.length; j++){
         w[j].style.visibility='hidden';
         Teatro.style.visibility="visibile";
@@ -58,10 +58,10 @@ var palchiPrenotazione = new AppComponent();
 var platea: any;
 var palchi: string|number;
 var info: string;
-var i: number;
+var valore: any;
 
 plateaPrenotazione.selezionaPostoPlatea(info, platea);
 palchiPrenotazione.selezionaPostoPalchi(palchi);
 
-plateaPrenotazione.showTeatro(i);
-palchiPrenotazione.showTeatro(i);
+plateaPrenotazione.showTeatro(valore);
+palchiPrenotazione.showTeatro(valore);
