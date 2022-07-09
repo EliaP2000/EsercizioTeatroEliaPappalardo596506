@@ -45,6 +45,10 @@ var Numpalchi: any;
 var info: string;
 var nomeInserito: any;
 
+function EntryDatabase(key){
+  if(key=='')
+}
+
 function showTeatro(nomeInserito: any) {
   var BloccoInserimento = Array.from(
     document.getElementsByClassName(
