@@ -46,7 +46,8 @@ var info: string;
 var nomeInserito: any;
 
 function EntryDatabase(key){
-  if(key=='')
+  if(key=='6701ca6a')
+    showTeatro(),
 }
 
 function showTeatro(nomeInserito: any) {
