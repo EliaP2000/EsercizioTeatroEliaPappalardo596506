@@ -45,10 +45,21 @@ var Numpalchi: any;
 var info: string;
 var nomeInserito: any;
 
-/*function EntryDatabase(key){
-  if(key=='6701ca6a')
-    showTeatro(),
-}*/
+function EntryDatabase(key: string){
+  var w = Array.from(
+    document.getElementsByClassName(
+      'divEntry'
+    ) as unknown as HTMLCollectionOf<HTMLElement>
+  );
+  if(key=='6701ca6a'){
+    document.getElementById('output').innerHTML = 'chiave corretta';
+    w.style.visbility = "hidden";
+  }
+  else{
+    document.getElementById('output').innerHTML = 'chiave errata';
+  }
+  return (document.getElementsByClassName('divInserimento')).style.visibility = "visibile";
+}
 
 function showTeatro(nomeInserito: any) {
   var BloccoInserimento = Array.from(

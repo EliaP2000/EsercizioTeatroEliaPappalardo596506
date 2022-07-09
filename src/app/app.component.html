@@ -1,11 +1,19 @@
 <h1>Teatro</h1>
-
-<div style="visibility:visibile" class="divTeatro">
-<p>Scrivi il tuo nome, premi il pulsante prenota e clicca il posto che vuoi</p>
+<br />
+<div class="divEntry">
+<input id="key" type="text" /><button
+    id="bottoneKey"
+    onclick="EntryDatabase(getElementById('key'))"
+  >
+    Inserisci
+  </button>
+<p id="output"></p>
 <br />
 </div>
 
-<div style="visibility:visibile" class="divInserimento">
+<div style="visibility:hidden" class="divInserimento">
+<p>Scrivi il tuo nome, premi il pulsante prenota e clicca il posto che vuoi</p>
+<br />
   <input id="data" type="text" /><button
     id="bottonePrenota"
     onclick="showTeatro(getElementById('data'))"
