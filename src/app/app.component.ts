@@ -43,7 +43,7 @@ var palchiPrenotazione = new AppComponent();
 var Numplatea: any;
 var Numpalchi: any;
 var info: string;
-//var nomeInserito: any;
+
 
 function showTeatro(nomeInserito: any) {
   var BloccoInserimento = Array.from(
@@ -73,3 +73,5 @@ function showTeatro(nomeInserito: any) {
 
 plateaPrenotazione.selezionaPostoPlatea(info, Numplatea);
 palchiPrenotazione.selezionaPostoPalchi(info, Numpalchi);
+
+var MostraTeatro = showTeatro();
