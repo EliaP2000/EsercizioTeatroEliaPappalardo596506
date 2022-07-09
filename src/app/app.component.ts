@@ -71,8 +71,4 @@ function showTeatro(nomeInserito: any) {
   }
 }
 
-plateaPrenotazione.selezionaPostoPlatea(info, Numplatea);
-palchiPrenotazione.selezionaPostoPalchi(info, Numpalchi);
-
 var MostraTeatro = showTeatro(nomeInserito);
-console.log(nomeInserito);
