@@ -45,10 +45,10 @@ var Numpalchi: any;
 var info: string;
 var nomeInserito: any;
 
-function EntryDatabase(key){
+/*function EntryDatabase(key){
   if(key=='6701ca6a')
     showTeatro(),
-}
+}*/
 
 function showTeatro(nomeInserito: any) {
   var BloccoInserimento = Array.from(
