@@ -15,12 +15,8 @@ export class AppComponent {
   bottoni = [];
   bottoni1 = [];
   constructor() {
-    this.bottoni = Array(70)
-      .fill(0)
-      .map((x, i) => i + 1);
-    this.bottoni1 = Array(24)
-      .fill(0)
-      .map((x, i) => i + 1);
+    this.bottoni = Array(70).fill(0).map((x, i) => i + 1);
+    this.bottoni1 = Array(24).fill(0).map((x, i) => i + 1);
   }
   public selezionaPostoPlatea(info: string, Numplatea: any) {
     for (var j = 0; j < this.bottoni.length; j++) {
