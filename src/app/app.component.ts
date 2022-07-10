@@ -7,6 +7,7 @@ console.log(info)*/
 
 const URL: string =
   'https://eu-central-1.aws.data.mongodb-api.com/app/kvaas-giwjg/endpoint';
+  document.getElementById('setbtn').addEventListener('click', EntryDatabase);
 
 @Component({
   selector: 'my-app',
