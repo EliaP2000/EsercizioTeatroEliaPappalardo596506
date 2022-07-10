@@ -60,7 +60,7 @@ function EntryDatabase(key: string){
     ) as unknown as HTMLCollectionOf<HTMLElement>
   );
   for(var j=0; j<w.length; j++){
-    if(key=='6701ca6a'){
+    if(key=='6a435159'){
       document.getElementById('output').innerHTML = 'chiave corretta';
       w[j].style.visibility = "hidden";
       const obs = ajax({
