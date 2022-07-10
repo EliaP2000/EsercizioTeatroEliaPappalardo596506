@@ -51,12 +51,14 @@ function EntryDatabase(key: string){
       'divEntry'
     ) as unknown as HTMLCollectionOf<HTMLElement>
   );
-  if(key=='6701ca6a'){
-    document.getElementById('output').innerHTML = 'chiave corretta';
-    w.style.visbility = "hidden";
-  }
-  else{
-    document.getElementById('output').innerHTML = 'chiave errata';
+  for(var j=0; j<w.length; j++){
+    if(key=='6701ca6a'){
+      document.getElementById('output').innerHTML = 'chiave corretta';
+      w.style.visbility = "hidden";
+    }
+    else{
+      document.getElementById('output').innerHTML = 'chiave errata';
+    }
   }
   return (document.getElementsByClassName('divInserimento')).style.visibility = "visibile";
 }
