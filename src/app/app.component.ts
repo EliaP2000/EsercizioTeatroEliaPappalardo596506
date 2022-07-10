@@ -27,6 +27,8 @@ export class AppComponent {
         this.bottoni[j] = info;
         //this.bottoni[j].style.backgroundColor = "red";
         info = '';
+        BloccoInserimento[j].style.visibility = 'visible';
+        BloccoTeatro[j].style.visibility = 'hidden';
       }
     }
   }
@@ -36,6 +38,8 @@ export class AppComponent {
         this.bottoni1[j] = info;
         //this.bottoni1[j].style.backgroundColor = "red";
         info = '';
+        BloccoInserimento[j].style.visibility = 'visible';
+        BloccoTeatro[j].style.visibility = 'hidden';
       }
     }
   }
@@ -43,6 +47,11 @@ export class AppComponent {
 var BloccoInserimento = Array.from(
   document.getElementsByClassName(
     'divInserimento'
+  ) as unknown as HTMLCollectionOf<HTMLElement>
+);
+var BloccoTeatro = Array.from(
+  document.getElementsByClassName(
+    'divTeatro'
   ) as unknown as HTMLCollectionOf<HTMLElement>
 );
 var plateaPrenotazione = new AppComponent();
@@ -84,11 +93,6 @@ function EntryDatabase(key: string){
 }
 
 function showTeatro(nomeInserito: any) {
-  var BloccoTeatro = Array.from(
-    document.getElementsByClassName(
-      'divTeatro'
-    ) as unknown as HTMLCollectionOf<HTMLElement>
-  );
   if (nomeInserito != null) {
     for (var j = 0; j < BloccoInserimento.length; j++) {
       BloccoInserimento[j].style.visibility = 'hidden';
