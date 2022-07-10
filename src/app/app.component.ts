@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-
+import { Observable } from 'rxjs';
+import { ajax, AjaxResponse, AjaxRequest, AjaxError } from 'rxjs/ajax';
 /*let info = document.getElementById("data") as string|HTMLInputElement;
 console.log(info)*/
+const URL: string =
+  'https://eu-central-1.aws.data.mongodb-api.com/app/kvaas-giwjg/endpoint';
 
 @Component({
   selector: 'my-app',
@@ -60,6 +63,18 @@ function EntryDatabase(key: string){
     if(key=='6701ca6a'){
       document.getElementById('output').innerHTML = 'chiave corretta';
       w[j].style.visibility = "hidden";
+      const obs = ajax({
+        method: 'POST',
+        url:URL + '/set?key=' + key,
+        crossDomain: true,
+        body: document.getElementById('data').value
+      })
+      obs.subscribe({
+        next: (res: AjaxResponse<any>) => {
+          document.getElementById('output').innerHTML = 'Ok!'; //response se il nuovo valore venisse settato
+        },
+        error: (err: AjaxError) => console.error(err.response),
+      });
     }
     else{
       document.getElementById('output').innerHTML = 'chiave errata';
