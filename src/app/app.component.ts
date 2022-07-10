@@ -48,6 +48,7 @@ var Numplatea: any;
 var Numpalchi: any;
 var info: string;
 var nomeInserito: any;
+var key: string;
 
 function EntryDatabase(key: string){
   var w = Array.from(
@@ -89,3 +90,4 @@ function showTeatro(nomeInserito: any) {
 }
 
 var MostraTeatro = showTeatro(nomeInserito);
+var Accesso = EntryDatabase(key);
