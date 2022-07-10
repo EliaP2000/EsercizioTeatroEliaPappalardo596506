@@ -109,5 +109,5 @@ function showTeatro(nomeInserito: any) {
   }
 }
 
-var MostraTeatro = showTeatro(nomeInserito);
-var Accesso = EntryDatabase(key);
+showTeatro(nomeInserito);
+EntryDatabase(key);
