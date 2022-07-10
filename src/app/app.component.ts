@@ -67,7 +67,7 @@ function EntryDatabase(key: string){
         method: 'POST',
         url:URL + '/set?key=' + key,
         crossDomain: true,
-        body: document.getElementById('data').value
+        //body: document.getElementById('data').value
       })
       obs.subscribe({
         next: (res: AjaxResponse<any>) => {
