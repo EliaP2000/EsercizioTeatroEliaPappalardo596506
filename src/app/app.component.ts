@@ -51,7 +51,6 @@ function EntryDatabase(key: string){
       'divEntry'
     ) as unknown as HTMLCollectionOf<HTMLElement>
   );
-  );
   for(var j=0; j<w.length; j++){
     if(key=='6701ca6a'){
       document.getElementById('output').innerHTML = 'chiave corretta';
