@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { ajax, AjaxResponse, AjaxRequest, AjaxError } from 'rxjs/ajax';
 /*let info = document.getElementById("data") as string|HTMLInputElement;
 console.log(info)*/
+
 const URL: string =
   'https://eu-central-1.aws.data.mongodb-api.com/app/kvaas-giwjg/endpoint';
 
