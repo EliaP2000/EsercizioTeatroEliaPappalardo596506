@@ -37,7 +37,11 @@ export class AppComponent {
     }
   }
 }
-
+var BloccoInserimento = Array.from(
+  document.getElementsByClassName(
+    'divInserimento'
+  ) as unknown as HTMLCollectionOf<HTMLElement>
+);
 var plateaPrenotazione = new AppComponent();
 var palchiPrenotazione = new AppComponent();
 var Numplatea: any;
@@ -59,16 +63,11 @@ function EntryDatabase(key: string){
     else{
       document.getElementById('output').innerHTML = 'chiave errata';
     }
+    return BloccoInserimento[j].style.visibility = "visibile";
   }
-  return (document.getElementsByClassName('divInserimento')).style.visibility = "visibile";
 }
 
 function showTeatro(nomeInserito: any) {
-  var BloccoInserimento = Array.from(
-    document.getElementsByClassName(
-      'divInserimento'
-    ) as unknown as HTMLCollectionOf<HTMLElement>
-  );
   var BloccoTeatro = Array.from(
     document.getElementsByClassName(
       'divTeatro'
